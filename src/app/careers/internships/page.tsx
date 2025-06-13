@@ -13,8 +13,8 @@ export default function InternshipsPage() {
       <Header scrollState={false} />
       <GenericHero
         title="Internship Programs"
+        text="."
         subtitle="Gain valuable experience with our internship opportunities."
-        breadcumb={["Home", "Careers", "Internships"]}
         image={"/internship.jpg"}
       />
       <div className="main py-20">
