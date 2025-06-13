@@ -35,7 +35,7 @@ export default async function FolderGalleryPage({ params }: PageProps) {
 
   return (
     <main className="min-h-screen bg-white">
-      <Header />
+      <Header scrollState={false}/>
       <div className="max-w-6xl mx-auto px-4 py-40">
         <h1 className="text-3xl font-bold mb-15 capitalize text-center">{folder} Gallery</h1>
         <FolderGalleryClient images={images} />
