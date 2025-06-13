@@ -6,14 +6,16 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 // 1. Define the expected props type
-interface PageProps {
-  params: {
-    folder: string;
-  };
-}
+// interface PageProps {
+//   params: {
+//     folder: string;
+//   };
+// }
 
 // 2. Use the props type in your page component
-export default async function FolderGalleryPage({ params }: PageProps) {
+// export default async function FolderGalleryPage({ params }: PageProps) {
+export default async function FolderGalleryPage({ params }: { params: { folder: string } }) {
+
   const { folder } = params;
   const folderPath = path.join(process.cwd(), "public", "gallery", folder);
 
