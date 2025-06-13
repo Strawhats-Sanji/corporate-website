@@ -14,7 +14,7 @@ interface PageProps {
 
 // 2. Use the props type in your page component
 export default async function FolderGalleryPage({ params }: PageProps) {
-  const { folder } = await params;
+  const { folder } = params;
   const folderPath = path.join(process.cwd(), "public", "gallery", folder);
 
   
