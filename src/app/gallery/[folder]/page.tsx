@@ -6,17 +6,16 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 // 1. Define the expected props type
-// interface PageProps {
-//   params: {
-//     folder: string;
-//   };
-// }
+interface PageProps {
+  params: Promise<{
+    folder: string;
+  }>;
+}
 
 // 2. Use the props type in your page component
-// export default async function FolderGalleryPage({ params }: PageProps) {
-export default async function FolderGalleryPage({ params }: { params: { folder: string } }) {
+export default async function FolderGalleryPage({ params }: PageProps) {
 
-  const { folder } = params;
+  const { folder } = await params;
   const folderPath = path.join(process.cwd(), "public", "gallery", folder);
 
   
@@ -26,7 +25,7 @@ export default async function FolderGalleryPage({ params }: { params: { folder: 
     const files = await fs.readdir(folderPath);
     images = files.map((file) => `/gallery/${folder}/${file}`);
   } catch (error) {
-    console.error("Error reading folder:", error);
+    
     return (
       <main className="min-h-screen flex items-center justify-center">
         <p className="text-xl text-red-600">Folder not found or no images</p>
