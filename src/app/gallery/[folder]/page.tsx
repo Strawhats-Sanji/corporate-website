@@ -17,6 +17,7 @@ export default async function FolderGalleryPage({ params }: PageProps) {
   const { folder } = await params;
   const folderPath = path.join(process.cwd(), "public", "gallery", folder);
 
+  
   let images: string[] = [];
 
   try {
