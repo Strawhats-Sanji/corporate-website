@@ -23,7 +23,7 @@ export default function page() {
     },
     {
       title: "No Minimum Balance",
-      text: "Enjoy true financial freedom with zero minimum balance requirements and no hidden restrictions.",
+      text: "Enjoy true financial freedom with zero minimum balance requirements, no hidden restrictions and no hidden charges.",
     },
     {
       title: "Debit Card",

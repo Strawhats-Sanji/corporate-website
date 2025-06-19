@@ -14,7 +14,7 @@ export default function ProductsSection() {
     {
       heading: "Deposit Products",
       text: "Enjoy interest-free and profit-sharing deposit accounts designed to align with your values while ensuring financial stability and growth.",
-      // image: "/deposit-products.png",
+      //image: "/product/deposit-products.png",
       type: "small",
       link: "/deposit-products",
     },
@@ -28,7 +28,7 @@ export default function ProductsSection() {
     {
       heading: "Personal Financing",
       text: "Access ethical financing solutions that support business growth, asset acquisition, and investments. All without compromising your values.",
-      image: "/financing.png",
+      image: "/product/financing.png",
       type: "small",
       link: "/financing-products",
     },
@@ -72,7 +72,7 @@ export default function ProductsSection() {
             <p className="py-4 lg:max-w-[800px] w-full mx-auto">
               Get premium financial solutions for personal and business needs.
               We deliver expert support and tailored services with unmatched
-              professionalism across the nation.
+              professionalism.
             </p>
           </Framer>
         </div>

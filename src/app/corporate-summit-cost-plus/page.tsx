@@ -27,15 +27,15 @@ export default function page() {
     {
       title:
         "Can be used for raw materials, goods and inventory finance, working capital funding, import and expert, letter of credit and guarantee services",
-      text: "Access your funds easily with our Shari'ah-compliant debit card and personalized cheque book.",
+      text: "Access your funds easily with our debit card and personalized cheque book.",
     },
     {
       title: "Insurance cover from reputable Takaful Company",
-      text: "Access your funds easily with our Shari'ah-compliant debit card and personalized cheque book.",
+      text: "Access your funds easily with our debit card and personalized cheque book.",
     },
     {
       title: "No hidden charges",
-      text: "Access your funds easily with our Shari'ah-compliant debit card and personalized cheque book.",
+      text: "Access your funds easily with our debit card and personalized cheque book.",
     },
   ];
   const allSection = [

@@ -9,10 +9,10 @@ import React from "react";
 
 export default function FinancingProducts() {
   const heroData = {
-    title: "Empower Your Ambitions—The Shariah Way",
-    text: "Empowering your goals through ethical, Shariah-compliant financing tailored for individuals, businesses, and communities.",
-    image: "/pages-hero/financing-bg.png",
-    subtitle: "Financing Products",
+    title: "Empower Your Ambitions—The Ethical Way",
+    text: "Empowering your goals through ethical financing tailored for individuals, businesses, and communities.",
+    image: "/pages-hero/financing.png",
+    //subtitle: "Financing Products",
     buttonText: "Get Started",
   };
 
@@ -23,8 +23,8 @@ export default function FinancingProducts() {
   const allSection = [
     {
       title: "Cost-Plus Financing (Murabaha)",
-      text: "Need to purchase equipment, vehicles, or inventory? With Murabaha, we buy the asset and sell it to you at a pre-agreed profit margin; transparent, ethical, and interest-free.",
-      image: "/pages-section/murabaha.png",
+      text: "Need to purchase equipment, vehicles, real estate or inventory? With Murabaha, we buy the asset and sell it to you at a pre-agreed profit margin; transparent, ethical, and interest-free.",
+      image: "/pages-section/cost-plus.png",
       reverse: true,
     },
     {
@@ -35,18 +35,18 @@ export default function FinancingProducts() {
     {
       title: "Partnership Financing (Musharakah) ",
       text: "Enter a true partnership. We contribute capital together, share profits as agreed, and shoulder losses based on our input—aligned interests, shared growth.",
-      image: "/pages-section/partnership-financing.png",
+      image: "/pages-section/partnership-financee.png",
       reverse: true,
     },
     {
       title: "Profit-Sharing Investment (Mudarabah)",
-      text: "Have the idea, but need the funding? You manage, We invest. Profits are shared per our agreement, while you retain operational control.",
-      image: "/pages-section/profit-sharing.png",
+      text: "Have the idea, but need the funding? You manage. We invest. Profits are shared per our agreement, while you retain operational control.",
+      image: "/pages-section/profit-share.png",
     },
     {
       title: "Manufacturing Financing (Istisna)",
       text: "For builders, manufacturers, and creators; Summit finances your projects with flexible timelines and structured payments as your goods take shape.",
-      image: "/pages-section/manufacturing-financing.png",
+      image: "/pages-section/manufacturing-finance.png",
       reverse: true,
     },
     {

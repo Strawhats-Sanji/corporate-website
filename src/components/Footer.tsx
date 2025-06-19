@@ -18,17 +18,21 @@ export default function Footer() {
           link: "#",
         },
         { text: "Current Account (Qard)", link: "#" },
-        { text: "Fixed Account", link: "#" },
         { text: "Savings Account (Mudarabah)", link: "#" },
         { text: "Summit MTD (Mudarabah)", link: "#" },
+        { text: "Domiciliary Accounts", link: "#" },
       ],
     },
     {
       heading: "SME",
       links: [
         {
-          text: "Corporate Account (Qard)",
+          text: "Corporate Current Account (Qard)",
           link: "/business-corporate-account",
+        },
+         {
+          text: "Summit Cost-Plus - SCP (Murabaha)",
+          link: "/corporate-summit-cost-plus",
         },
         {
           text: "Summit Lease to Own Finance - SLOF (Ijara)",
@@ -38,14 +42,18 @@ export default function Footer() {
           text: "Customized Investment Plan – CIP",
           link: "/business-customized-investment-plan",
         },
-        { text: "Foreign Currency", link: "#" },
+        { text: "Domiciliary Accounts", link: "#" },
+        {
+          text: "Summit Sukuk Investments - SSI",
+          link: "/corporate-summit-sukuk-investments",
+        },
       ],
     },
     {
       heading: "Corporate",
       links: [
         {
-          text: "Corporate Account (Qard)",
+          text: "Corporate Current Account (Qard)",
           link: "/corporate-account",
         },
         {
@@ -60,6 +68,7 @@ export default function Footer() {
           text: "Summit Sukuk Investments - SSI",
           link: "/corporate-summit-sukuk-investments",
         },
+        { text: "Domiciliary Accounts", link: "#" },
       ],
     },
     {
@@ -73,8 +82,8 @@ export default function Footer() {
           text: "Summit Lease to Own Finance - SLOF (Ijara)",
           link: "/personal-summit-lease",
         },
-        { text: "Home finance / Financing", link: "#" },
-        { text: "Investment finance / Financing", link: "#" },
+        { text: "Home and other asset acquisition financing", link: "#" },
+        { text: "Investment finance", link: "#" },
       ],
     },
     {

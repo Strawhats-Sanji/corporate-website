@@ -20,7 +20,7 @@ export default function HeroCarousel() {
     {
       id: 1,
       title: "Partnership",
-      text: "Partnership is at our core. We do not serve customers, We stand with people. Supporting their goals every step of the way.",
+      text: "Partnership is at our core. We do not serve customers. We stand with people. Supporting their goals every step of the way.",
       image: "/carousel/partnership.jpg",
     },
     {

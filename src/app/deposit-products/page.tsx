@@ -11,7 +11,7 @@ export default function DepositProduct() {
   const heroData = {
     title: "Save with Confidence. Grow Your Wealth Ethically.",
     text: "Ethical, interest-free deposit solutions to help you save securely and grow with confidence.",
-    image: "/pages-hero/deposit-bg.png",
+    image: "/pages-hero/deposit.png",
     subtitle: "Deposit Products",
     buttonText: "Get Started",
   };
@@ -23,21 +23,21 @@ export default function DepositProduct() {
   const allSection = [
     {
       title: "Current Account (Qard Hasan)",
-      text: "Our Qard Hasan Current Account is ideal for everyday transactions, offering you full access to your funds while ensuring zero interest. Your deposits are securely held and guaranteed by Summit Bank, allowing you to manage your finances with ease and integrity.",
+      text: "Our Current Account is ideal for everyday transactions, offering you full access to your funds. Your deposits are securely held and guaranteed by Summit Bank, allowing you to manage your finances with ease and integrity.",
       image: "/pages-section/current-account.png",
       reverse: true,
 
     },
     {
       title: "Savings Account (Mudarabah Savings)",
-      text: "With our Mudarabah Savings Account, your money works ethically. We invest your funds into Shariah-compliant ventures, and you share in the profits—fairly and transparently. It’s savings, re-imagined for peace of mind and purpose.",
+      text: "With our Mudarabah Savings Account, your money works ethically. We invest your funds into Shariah-compliant ventures, and you share in the profits—fairly and transparently. It is savings, re-imagined for peace of mind and purpose.",
       image: "/pages-section/savings-account.png",
       button: false,
       buttontext: "Open Account",
     },
     {
       title: "Fixed/Term Deposit (Mudarabah Term Deposit)",
-      text: "Choose our Mudarabah Term Deposit for structured, time-bound investments with competitive profit-sharing returns. It’s a reliable way to grow your wealth over time while aligning with your values.",
+      text: "Choose our Mudarabah Term Deposit for structured, time-bound investments with competitive profit-sharing returns. It is a reliable way to grow your wealth over time while aligning with your values.",
       image: "/pages-section/fixed-deposit.png",
       reverse: true,
 

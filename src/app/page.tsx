@@ -11,19 +11,19 @@ import GenericSection from "@/components/section/GenericSection";
 
 export default function Home() {
   const loanSection = {
-    title: "Apply for Summit Instant Facility and Transform your Financial Life!",
-    text: "Get up to Millions in business finance from Summit Bank at the best industry rate.",
-    button: false,
-    buttontext: "",
-    image: "/pages-section/loan.png",
-    customClass: "p-5 lg:p-10 rounded-2xl bg-[var(--inert-color)]",
+    // title: "Apply for Summit Instant Facility and Transform your Financial Life!",
+    // text: "Get up to Millions in business finance from Summit Bank at the best industry rate.",
+    // button: false,
+    // buttontext: "",
+    // image: "/pages-section/loan.png",
+    // customClass: "p-5 lg:p-10 rounded-2xl bg-[var(--inert-color)]",
   };
   return (
     <div className=" ">
       <DefaultLayout>
         <HeroCarousel />
         <ProductsSection />
-        <div className="pb-20">
+        <div className="pb-0">
           <GenericSection
             title={loanSection?.title}
             text={loanSection?.text}

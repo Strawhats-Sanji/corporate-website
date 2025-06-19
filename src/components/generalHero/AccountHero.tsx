@@ -6,14 +6,33 @@ import Button from "../Button";
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import { usePathname } from "next/navigation";
+import ProductsSection from "@/components/section/ProductsSection";
 
 interface HeroInterface {
   title: string;
   text: string;
+  boxOne:string;
+  boxTwo:string;
+  boxThree:string;
 }
-export default function AccountHero({ title, text }: HeroInterface) {
+export default function AccountHero({ title, text, boxOne, boxTwo, boxThree }: HeroInterface) {
   const path = usePathname();
   const data = path.split("-")?.[0];
+
+   const allFeatures = [
+      {
+        title: "Online & Mobile Banking",
+        text: "and online banking platform.",
+      },
+      {
+        title: "No Minimum Balance",
+        text: "Enjoy true financial.Enjoy true financialEnjoy true financialEnjoy true financial",
+      },
+      {
+        title: "Cheque Book & Debit Card",
+        text: "Access your funds easily",
+      },
+    ];
 
   const openAccount = () => {
     const lowerData = data.toLowerCase();
@@ -43,17 +62,24 @@ export default function AccountHero({ title, text }: HeroInterface) {
         <div className="flex flex-col items-center justify-center gap-10">
           <div className="flex items-center flex-col lg:w-[600px] mx-auto justify-center space-y-7">
             <div className="flex flex-wrap justify-center gap-x-3">
-              {title?.split(" ").map((char: string, i: number) => (
+
+              <ProductsSection features={allFeatures} />
+
+              {/* {title?.split(" ").map((char: string, i: number) => (
                 <div className=" " key={i}>
                   <Framer animation={fadeInLetters(i)}>
                     <h1>{char}</h1>
                   </Framer>
                 </div>
-              ))}
+              ))} */}
             </div>
-            <Framer animation={fadeIn("up", 0.3)}>
+            {/* <Framer animation={fadeIn("up", 0.3)}>
               <p className="lg:w-[500px]">{text}</p>
-            </Framer>
+            </Framer> */}
+
+
+
+            
             {/* <div className="pt-4">
               <Framer animation={slideUp(1.2)}>
                 <Button
