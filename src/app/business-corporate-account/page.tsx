@@ -13,7 +13,7 @@ import { text } from "stream/consumers";
 
 export default function page() {
   const heroDetails = {
-    title: "Corporate Account (Qard)",
+    title: "Corporate Current Account (Qard)",
     text: "These are structured based on the customer’s risk and return expectations.",
   };
 

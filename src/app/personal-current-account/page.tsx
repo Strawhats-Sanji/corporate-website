@@ -43,9 +43,10 @@ const allSection = [
     title: "How to Open an Account",
     image: "/account/current-1.png",
     list: [
-      <>Branch: Visit any Summit Bank branch or Agent account opening form</>,
       <>Mobile App: Download Summit Bank App from the App Store or Play Store.</>,
       <>Online: Visit <a href="https://www.summitbankng.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">www.summitbankng.com</a></>,
+      <>Branch: Visit any Summit Bank branch or Agent account opening form</>,
+    
     ],
     reverse: true,
     },

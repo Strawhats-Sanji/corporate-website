@@ -19,20 +19,23 @@ export default function AccountHero({ title, text, boxOne, boxTwo, boxThree }: H
   const path = usePathname();
   const data = path.split("-")?.[0];
 
-   const allFeatures = [
-      {
-        title: "Online & Mobile Banking",
-        text: "and online banking platform.",
-      },
-      {
-        title: "No Minimum Balance",
-        text: "Enjoy true financial.Enjoy true financialEnjoy true financialEnjoy true financial",
-      },
-      {
-        title: "Cheque Book & Debit Card",
-        text: "Access your funds easily",
-      },
-    ];
+  const allFeatures = [
+    {
+      title: "Current Account (Qard)",
+      text: "Enjoy unrestricted banking with full control, ethical standards, and seamless access to your funds anytime, anywhere.",
+      link: "https://yourdomain.com/current-account"
+    },
+    {
+      title: "Savings Account (Qard)",
+      text: "Save with confidence through a secure, future-focused savings account designed to grow with your goals.",
+      link: "https://yourdomain.com/savings-account"
+    },
+    {
+      title: "Savings Account (Mudarabah)",
+      text: "Earn potential returns while maintaining access to your funds. A flexible account designed for responsible growth.",
+      link: "https://yourdomain.com/investment-savings-account"
+    },
+  ];
 
   const openAccount = () => {
     const lowerData = data.toLowerCase();

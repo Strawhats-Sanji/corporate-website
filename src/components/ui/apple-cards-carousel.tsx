@@ -247,16 +247,35 @@ export const Card = ({
                   >
                     {card.category}
                   </motion.p>
-                  {card?.linkedIn && (
-                    <a
-                      href={card?.linkedIn}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      referrerPolicy="no-referrer"
-                    >
-                      <RiLinkedinBoxFill size={30} />
-                    </a>
-                  )}
+                  {Array.isArray(card?.linkedIn) ? (
+  <div className="flex flex-col gap-2 mt-4">
+    {card.linkedIn.map((link, i) => (
+      <a
+        key={i}
+        href={link.url}
+        target="_blank"
+        rel="noopener noreferrer"
+        referrerPolicy="no-referrer"
+        className="flex items-center text-[#AF1F23] text-sm font-medium hover:opacity-90 transition-colors"
+      >
+        <RiLinkedinBoxFill size={18} className="mr-1 text-[#0A1E42]" />
+        {link.label}
+      </a>
+    ))}
+  </div>
+) : card?.linkedIn ? (
+  <a
+    href={card.linkedIn}
+    target="_blank"
+    rel="noopener noreferrer"
+    referrerPolicy="no-referrer"
+    className="flex items-center text-[#AF1F23] text-sm font-medium mt-2 hover:opacity-90 transition-colors"
+  >
+    <RiLinkedinBoxFill size={18} className="mr-1 text-[#0A1E42]" />
+    LinkedIn
+  </a>
+) : null}
+                 
                 </div>
                 <div className="">{card.content}</div>
             <Image src='/trade.png' className=" absolute top-0 -z-10 w-full h-full" height={500} width={500} alt="red"/>
