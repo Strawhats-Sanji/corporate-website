@@ -19,24 +19,34 @@ export default function AllProfiles() {
     );
   };
 
-   const beyondNumbers = (
+  const beyondNumbers = (
     <div className="mt-[-50px] text-center">
       <SectionHero
         subtitle={
-          <motion.span
-            className="text-transparent bg-clip-text bg-gradient-to-r from-[#C6B17D] via-[#AF1F23] to-[#C6B17D] bg-[length:200%_auto] bg-left animate-gradient"
-            initial={{ backgroundPosition: "100% center" }}
-            animate={{ backgroundPosition: "0% center" }}
-            transition={{ duration: 4, repeat: Infinity, repeatType: "reverse" }}
+          <motion.div
+            className="inline-block"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
           >
-            ...Beyond Numbers
-          </motion.span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#C6B17D] via-[#AF1F23] to-[#C6B17D] bg-[length:200%_auto] bg-left animate-gradient text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+              ...Beyond Numbers
+            </span>
+            <motion.p
+              className="mt-2 text-transparent bg-clip-text bg-gradient-to-r from-[#AF1F23] via-[#C6B17D] to-[#AF1F23] bg-[length:200%_auto] bg-left animate-gradient text-lg md:text-xl font-medium"
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.5, duration: 1 }}
+            >
+              We build smarter tools, deeper trust, and real impact.
+            </motion.p>
+          </motion.div>
         }
-        customClass={"!text-3xl md:!text-5xl lg:!text-6xl !leading-[1.2]"}
+        customClass="!text-3xl md:!text-5xl lg:!text-6xl !leading-[1.2]"
       />
     </div>
   );
-
+  
   const directors = [
     {
       title: "Umar Shuaib Ahmed",

@@ -64,36 +64,25 @@ export default function AccountHero({ title, text, boxOne, boxTwo, boxThree }: H
       <div className="main pt-10 text-center flex items-center justify-center h-full">
         <div className="flex flex-col items-center justify-center gap-10">
           <div className="flex items-center flex-col lg:w-[600px] mx-auto justify-center space-y-7">
-            <div className="flex flex-wrap justify-center gap-x-3">
+            {/* <div className="flex flex-wrap justify-center gap-x-3">
 
               <ProductsSection features={allFeatures} />
 
-              {/* {title?.split(" ").map((char: string, i: number) => (
+              {title?.split(" ").map((char: string, i: number) => (
                 <div className=" " key={i}>
                   <Framer animation={fadeInLetters(i)}>
                     <h1>{char}</h1>
                   </Framer>
                 </div>
-              ))} */}
-            </div>
-            {/* <Framer animation={fadeIn("up", 0.3)}>
-              <p className="lg:w-[500px]">{text}</p>
-            </Framer> */}
-
-
-
-            
-            {/* <div className="pt-4">
-              <Framer animation={slideUp(1.2)}>
-                <Button
-                  text="Open Account"
-                  type="primary"
-                  buttonFn={openAccount}
-                >
-                  <ArrowRight size={20} color="white" />
-                </Button>
-              </Framer>
+              ))}
             </div> */}
+            <div className="flex flex-wrap justify-center gap-x-3">
+
+              <ProductsSection features={allFeatures} />
+
+            </div>
+
+
           </div>
         </div>
       </div>
