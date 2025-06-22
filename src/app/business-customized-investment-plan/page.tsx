@@ -28,11 +28,11 @@ export default function page() {
     },
     {
       title: "Diversified portfolio opportunities",
-      text: "Access your funds easily with our Shari'ah-compliant debit card and personalized cheque book.",
+      text: "Access your funds easily with our debit card and personalized cheque book.",
     },
     {
       title: "Regular profit distributions",
-      text: "Access your funds easily with our Shari'ah-compliant debit card and personalized cheque book.",
+      text: "Access your funds easily with our debit card and personalized cheque book.",
     
     },
 

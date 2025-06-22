@@ -16,11 +16,11 @@ export default function Features() {
       text: "Protect your financial information with our digitally advanced security.",
       image: "/secure.svg",
     },
-    {
-      title: "Extensive Global Coverage",
-      text: "Access our global network that covers more than 169 countries for your international transactions.",
-      image: "/world.svg",
-    },
+    // {
+    //   title: "Extensive Global Coverage",
+    //   text: "Access our global network that covers more than 169 countries for your international transactions.",
+    //   image: "/world.svg",
+    // },
   ];
   return (
     <div

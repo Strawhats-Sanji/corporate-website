@@ -6,6 +6,7 @@ import GenericSection from "@/components/section/GenericSection";
 import { fadeInLetters, slideUp } from "@/lib/animation";
 import React from "react";
 import AllProfiles from "../../components/profiles/AllProfiles";
+import Image from "next/image";
 
 export default function About() {
   const heroData = {
@@ -17,7 +18,7 @@ export default function About() {
 
   const standSection = {
     title: "Summit Values",
-    // image: "/pages-section/stand.png",
+    image: "/pages-section/stand.png",
   };
 
   const mission = {
@@ -62,7 +63,7 @@ export default function About() {
             <Framer animation={slideUp(0.6)}>
               <div>
                 <p>
-                  Summit Bank Limited was incorporated on 15th July 2024, as a limited liability company licensed by the Central Bank of Nigeria (CBN) to provide non-interest banking services to the public. The Bank is positioned to become one of the most efficient digital and service focused banks in Nigeria.
+                  Summit Bank Limited was incorporated on 15th July 2024, as a limited liability company and licensed on 5th February 2025, by the Central Bank of Nigeria (CBN) to provide non-interest banking services to the public. The Bank is positioned to become one of the most efficient digital and service focused banks in Nigeria.
                 </p>
                 <br />
                 <p> 

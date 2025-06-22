@@ -28,19 +28,19 @@ export default function page() {
     },
     {
       title: "Flexible tenor and payment plan",
-      text: "Access your funds easily with our Shari'ah-compliant debit card and personalized cheque book.",
+      text: "Access your funds easily with our debit card and personalized cheque book.",
     },
     {
       title: "Insurance cover from reputable Takaful Company",
-      text: "Access your funds easily with our Shari'ah-compliant debit card and personalized cheque book.",
+      text: "Access your funds easily with our debit card and personalized cheque book.",
     },
     {
       title: "No hidden charges",
-      text: "Access your funds easily with our Shari'ah-compliant debit card and personalized cheque book.",
+      text: "Access your funds easily with our debit card and personalized cheque book.",
     },
     {
       title: "Available for homes, cars, and equipment",
-      text: "Access your funds easily with our Shari'ah-compliant debit card and personalized cheque book.",
+      text: "Access your funds easily with our debit card and personalized cheque book.",
     },
 
       

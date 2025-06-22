@@ -3,6 +3,7 @@
 import React from "react";
 import SectionHero from "../generalHero/SectionHero";
 import { Carousel, Card } from "@/components/ui/apple-cards-carousel";
+import { motion } from "framer-motion";
 
 export default function AllProfiles() {
   interface DummyContentProps {
@@ -17,6 +18,35 @@ export default function AllProfiles() {
       </div>
     );
   };
+
+  const beyondNumbers = (
+    <div className="mt-[-50px] text-center">
+      <SectionHero
+        subtitle={
+          <motion.div
+            className="inline-block"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+          >
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#C6B17D] via-[#AF1F23] to-[#C6B17D] bg-[length:200%_auto] bg-left animate-gradient text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+              ...Beyond Numbers
+            </span>
+            <motion.p
+              className="mt-2 text-transparent bg-clip-text bg-gradient-to-r from-[#AF1F23] via-[#C6B17D] to-[#AF1F23] bg-[length:200%_auto] bg-left animate-gradient text-lg md:text-xl font-medium"
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.5, duration: 1 }}
+            >
+              We build smarter tools, deeper trust, and real impact.
+            </motion.p>
+          </motion.div>
+        }
+        customClass="!text-3xl md:!text-5xl lg:!text-6xl !leading-[1.2]"
+      />
+    </div>
+  );
+  
   const directors = [
     {
       title: "Umar Shuaib Ahmed",
@@ -30,7 +60,10 @@ export default function AllProfiles() {
         />
       ),
       src: "/directors/Chairman.jpg",
-      linkedIn: "https://www.linkedin.com/in/umar-shuaib-ahmed-10b62b34?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+      linkedIn: [
+        { label: "Personal Profile", url: "https://www.linkedin.com/in/umar-shuaib-ahmed-10b62b34/"},
+        {label: "Summit Bank", url: "https://www.linkedin.com/company/summitbankng"}
+      ]
     },
     {
       title: "Sirajo Salisu",
@@ -43,7 +76,10 @@ export default function AllProfiles() {
         />
       ),
       src: "/directors/MD.jpg",
-      linkedIn: "https://www.linkedin.com/company/summitbankng"
+      linkedIn: [
+        { label: "Personal Profile", url: "https://www.linkedin.com/company/summitbankng"},
+        {label: "Summit Bank", url: "https://www.linkedin.com/company/summitbankng"}
+      ]
     },
     {
       title: "Mukhtar Adam, PhD",
@@ -56,7 +92,10 @@ export default function AllProfiles() {
         />
       ),
       src: "/directors/ED.jpg",
-      linkedIn: "https://www.linkedin.com/company/summitbankng"
+       linkedIn: [
+        { label: "Personal Profile", url: "https://www.linkedin.com/in/mukhtar-adam-phd-69a05821/"},
+        {label: "Summit Bank", url: "https://www.linkedin.com/company/summitbankng"}
+      ]
     },
     {
       title: "Aisha Bello",
@@ -68,7 +107,10 @@ export default function AllProfiles() {
         />
       ),
       src: "/directors/AISHA.jpg",
-      linkedIn: "https://www.linkedin.com/company/summitbankng"
+       linkedIn: [
+        { label: "Personal Profile", url: "https://www.linkedin.com/company/summitbankng"},
+        {label: "Summit Bank", url: "https://www.linkedin.com/company/summitbankng"}
+      ]
 
     },
     {
@@ -82,7 +124,10 @@ export default function AllProfiles() {
         />
       ),
       src: "/directors/ASMAU.jpg",
-      linkedIn: "https://www.linkedin.com/in/asma-u-nana-babah-mbci-miiba-33b40539?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+       linkedIn: [
+        { label: "Personal Profile", url: "https://www.linkedin.com/in/asma-u-nana-babah-mbci-miiba-33b40539/"},
+        {label: "Summit Bank", url: "https://www.linkedin.com/company/summitbankng"}
+      ]
     },
     {
       title: "Basit Adekunle Olawoyin",
@@ -95,7 +140,10 @@ export default function AllProfiles() {
         />
       ),
       src: "/directors/Basit.jpg",
-      linkedIn: "https://www.linkedin.com/in/basit-olawoyin-56813813?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+      linkedIn: [
+        { label: "Personal Profile", url: "https://www.linkedin.com/in/basit-olawoyin-56813813/"},
+        {label: "Summit Bank", url: "https://www.linkedin.com/company/summitbankng"}
+      ]
     },
     {
       title: "Seidu Adebowale John",
@@ -108,7 +156,10 @@ export default function AllProfiles() {
         />
       ),
       src: "/directors/SEIDU.jpg",
-      linkedIn: "https://www.linkedin.com/in/adebowale-seidu-ph-d-fca-fcti-crisc-crm-mciod-5930b253?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+      linkedIn: [
+        { label: "Personal Profile", url: "https://www.linkedin.com/in/adebowale-seidu-ph-d-fca-fcti-crisc-crm-mciod-5930b253/"},
+        {label: "Summit Bank", url: "https://www.linkedin.com/company/summitbankng"}
+      ]
     },
   ];
 
@@ -116,13 +167,17 @@ export default function AllProfiles() {
     <Card key={card.title} card={card} index={index} />
   ));
 
-  return (
-    <div className="mt-[-50px]" id="board">
-      <SectionHero
-        subtitle={"Meet The Board"}
-        customClass={" !text-2xl md:!text-3xl lg:!text-4xl !leading-[1.3]"}
-      />
-      <Carousel items={cards} />
+   return (
+    <div>
+      {beyondNumbers}
+      <div className="mt-[-50px]" id="board">
+        <SectionHero
+          subtitle={"Meet The Board"}
+          customClass={" !text-2xl md:!text-3xl lg:!text-4xl !leading-[1.3]"}
+        />
+        <Carousel items={cards} />
+      </div>
     </div>
   );
 }
+  

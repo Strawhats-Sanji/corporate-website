@@ -13,7 +13,7 @@ import { text } from "stream/consumers";
 
 export default function page() {
   const heroDetails = {
-    title: "Corporate Account (Qard)",
+    title: "Corporate Current Account (Qard)",
     text: "These are structured based on the customer’s risk and return expectations.",
   };
 
@@ -28,15 +28,15 @@ export default function page() {
     },
     {
       title: "Cheque book and business debit card",
-      text: "Access your funds easily with our Shari'ah-compliant debit card and personalized cheque book.",
+      text: "Access your funds easily with our debit card and personalized cheque book.",
     },
     {
       title: "Easy fund transfers and bill payments",
-      text: "Access your funds easily with our Shari'ah-compliant debit card and personalized cheque book.",
+      text: "Access your funds easily with our debit card and personalized cheque book.",
     },
     {
       title: "Online banking with bulk payment options",
-      text: "Access your funds easily with our Shari'ah-compliant debit card and personalized cheque book.",
+      text: "Access your funds easily with our debit card and personalized cheque book.",
     },
       
     

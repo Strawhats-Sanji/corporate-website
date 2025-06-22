@@ -27,7 +27,7 @@ export default function page() {
     },
     {
       title: "Available for vehicles, household goods and consumables",
-      text: "Access your funds easily with our Shari'ah-compliant debit card and personalized cheque book.",
+      text: "Access your funds easily with our debit card and personalized cheque book.",
     },
     {
       title: "No hidden charges",

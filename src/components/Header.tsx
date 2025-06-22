@@ -127,17 +127,18 @@ export default function Header({ scrollState }: { scrollState: boolean }) {
           text: "Accounts",
           links: [
             {
-              name: "Current Account (Qard)",
+              name: "Personal Accounts",
               link: "/personal-current-account",
+              description: "Current (Qard), Savings (Qard), Savings (Mudarabah)"
             },
-            {
-              name: "Savings Accounts (Qard)",
-              link: "/personal-savings-account",
-            },
-            {
-              name: "Savings Account (Mudarabah)",
-              link: "/saving-account",
-            },
+            // {
+            //   name: "Savings Accounts (Qard)",
+            //   link: "/personal-savings-account",
+            // },
+            // {
+            //   name: "Savings Account (Mudarabah)",
+            //   link: "/saving-account",
+            // },
           ],
         },
         {
@@ -182,7 +183,7 @@ export default function Header({ scrollState }: { scrollState: boolean }) {
           text: "Accounts",
           links: [
             {
-              name: "Corporate Account (Qard)",
+              name: "Corporate Current Account (Qard)",
               link: "/business-corporate-account",
             },
           ],
@@ -229,7 +230,7 @@ export default function Header({ scrollState }: { scrollState: boolean }) {
           text: "Accounts",
           links: [
             {
-              name: "Corporate Account (Qard)",
+              name: "Corporate Current Account (Qard)",
               link: "/corporate-account",
             },
           ],

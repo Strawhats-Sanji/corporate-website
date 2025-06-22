@@ -10,8 +10,8 @@ import React from "react";
 export default function TradeAndWorking() {
   const heroData = {
     title: "Trade & Working Capital Financing",
-    text: "Summit Bank’s Shariah-compliant trade finance supports global markets, interest-free, keeping your business ethical and thriving.",
-    image: "/pages-hero/trade-bg.png",
+    text: "Summit Bank’s trade finance solutions are designed to support global commerce while upholding ethical business practices and sustainable growth.",
+    image: "/pages-hero/trade.png",
     subtitle: "Trade & Working Capital Financing",
     buttonText: "Get Started",
   };
@@ -28,9 +28,9 @@ export default function TradeAndWorking() {
       reverse: true,
     },
     {
-      title: "Islamic Foreign Exchange (Bai al-Sarf )",
-      text: "Exchange currencies the halal way. Our Islamic FX service enables seamless, interest-free currency transactions for your business. Completely free of speculation or uncertainty.",
-      image: "/pages-section/islamic-exchange.png",
+      title: "Foreign Currency Transactions",
+      text: "Our FX services enables seamless, interest-free and less speculative transactions that supports the business needs of our partners.",
+      image: "/pages-section/islamic.png",
     },
   ];
 

@@ -27,7 +27,7 @@ export default function page() {
     },
     {
       title: "Transparent pricing with no interest charges",
-      text: "Access your funds easily with our Shari'ah-compliant debit card and personalized cheque book.",
+      text: "Access your funds easily with our debit card and personalized cheque book.",
     },
     
  

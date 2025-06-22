@@ -28,19 +28,19 @@ export default function page() {
     },
     {
       title: "Profit shared based on agreed sharing ratio with the bank",
-      text: "Access your funds easily with our Shari'ah-compliant debit card and personalized cheque book.",
+      text: "Access your funds easily with our debit card and personalized cheque book.",
     },
     {
       title: "Flexible investment period",
-      text: "Access your funds easily with our Shari'ah-compliant debit card and personalized cheque book.",
+      text: "Access your funds easily with our debit card and personalized cheque book.",
     },
     {
       title: "Reinvestment options",
-      text: "Access your funds easily with our Shari'ah-compliant debit card and personalized cheque book.",
+      text: "Access your funds easily with our debit card and personalized cheque book.",
     },
     {
       title: "Available for homes, cars, and equipment",
-      text: "Access your funds easily with our Shari'ah-compliant debit card and personalized cheque book.",
+      text: "Access your funds easily with ourdebit card and personalized cheque book.",
     },
 
       

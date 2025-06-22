@@ -10,8 +10,8 @@ import React from "react";
 
 export default function DigitalAndAlternativeBanking() {
   const heroData = {
-    title: "Ethical Banking—Now Smarter, Simpler, and Digital",
-    text: "Summit Bank’s Digital Banking blends Shariah-compliant tools with innovation for easy, ethical financial management.",
+    title: "Ethical Banking - Now Smarter, Simpler, and Digital",
+    text: "Summit Bank’s Digital Banking integrates ethical financial principles with advanced technology to deliver secure, transparent, and efficient financial management solutions.",
     image: "/pages-hero/ethical-banking-bg.png",
     subtitle: "Digital & Alternative Banking Solutions",
     // buttonText: "Get Started",
@@ -23,15 +23,20 @@ export default function DigitalAndAlternativeBanking() {
 
   const allSection = [
     {
-      title: "Islamic FinTech Solutions",
-      text: "Discover next-generation financial tools rooted in Islamic values. From Shariah-compliant digital banking platforms to ethical crowdfunding and blockchain-based transparency, our FinTech services offer smart, scalable, and fully halal alternatives to conventional finance.",
-      image: "/pages-section/fintech-solutions.png",
+      title: "Cutting-Edge FinTech Solutions",
+      text: "Discover next-generation financial tools that powers our digital banking platforms. Providing ethical crowdfunding and blockchain transactions based on transparency. Our FinTech services offer smart, scalable, stable and secure environment to support your needs.",
+      image: "/pages-section/fintech-solution.png",
       reverse: true,
     },
     {
-      title: "Islamic Credit Cards (Ujrah-Based)",
-      text: "Enjoy the convenience of a credit card, without the burden of interest. Our Ujrah-based credit cards operate on a transparent, fee-based model that keeps you financially empowered and aligned with Islamic values.",
+      title: "Cards ",
+      text: "Enjoy the convenience of using different range of cards. Our cards are secure, efficient and reliable.",
       image: "/pages-section/credit-cards.png",
+    },
+    {
+      title: "POS Terminals (Point of Sale) ",
+      text: "Our secure and customised point of sale terminals are designed to support merchants, agents and individuals to seamlessly perform instant transactions. ",
+      image: "/pages-section/pos-digital.png",
     },
   ];
 

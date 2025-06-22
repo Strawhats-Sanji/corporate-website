@@ -31,7 +31,7 @@ export default function Faq({
         "Unlike conventional banks, we do not deal in interest-based transactions. Our products are designed around partnerships, trade, and asset-backed financing models, ensuring fairness and shared risk between the bank and its customers.",
     },
     {
-      question: "Is Summit Bank the same as an Islamic bank?",
+      question: "Is Non-interest Bank the same as an Islamic bank?",
       answer:
         "While both share similar principles (like avoiding interest and promoting ethical finance), a non-interest bank may serve a broader audience, including individuals and businesses who prefer ethical, inclusive finance, regardless of religious affiliation.",
     },
@@ -94,7 +94,7 @@ export default function Faq({
           <li> <b>Risk Sharing:</b> Financiers and entrepreneurs share profits and losses.</li>
           <li> <b>Asset-Backed Transactions:</b> Financing must be linked to real goods or services.</li>
           <li> <b>Fairness & Justice:</b> Transactions must be equitable and non-exploitative.</li>
-          <li> <b>Ethical Investment:</b> Prohibited sectors include alcohol, gambling and weapons.</li>
+          <li> <b>Ethical Investment:</b> Prohibited sectors include alcohol, gambling, weapons and other unethical activities.</li>
           <li> <b>Prohibition of Interest (Riba):</b> Fixed interest is disallowed; financing is return-based.</li>
           <li> <b>Avoidance of Excessive uncertainty (Gharar):</b> Highly speculative deals are not permissible.</li>
         </ul>

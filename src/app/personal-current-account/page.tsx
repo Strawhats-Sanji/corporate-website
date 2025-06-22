@@ -4,11 +4,13 @@ import AccountHero from "@/components/generalHero/AccountHero";
 import DefaultLayout from "@/components/layout/DefaultLayout";
 import Partners from "@/components/Partners";
 import FeaturesSection from "@/components/section/FeaturesSection";
+import FeatureBox from "@/components/FeatureBox";
 import GenericSection from "@/components/section/GenericSection";
 import { Testimonials } from "@/components/testimonials/Testimonials";
 import Image from "next/image";
 import { title } from "process";
 import React from "react";
+import { Container } from "lucide-react";
 
 export default function page() {
   const heroDetails = {
@@ -16,6 +18,7 @@ export default function page() {
     text: "Bank freely with a Shari'ah-compliant current account that gives you control, convenience, and peace of mind.",
   };
 
+  
   const allFeatures = [
     {
       title: "Online & Mobile Banking",
@@ -23,11 +26,11 @@ export default function page() {
     },
     {
       title: "No Minimum Balance",
-      text: "Enjoy true financial freedom with zero minimum balance requirements and no hidden restrictions.",
+      text: "Enjoy true financial freedom with zero minimum balance requirements, no hidden restrictions and no hidden charges.",
     },
     {
       title: "Cheque Book & Debit Card",
-      text: "Access your funds easily with our Shari'ah-compliant debit card and personalized cheque book.",
+      text: "Access your funds easily with our debit card and personalized cheque book.",
     },
     {
       title: "Fund Transfers & Bill Payments",
@@ -35,10 +38,21 @@ export default function page() {
     },
   ];
 
-  const allSection = [
+const allSection = [
+  {
+    title: "How to Open an Account",
+    image: "/account/current-1.png",
+    list: [
+      <>Mobile App: Download Summit Bank App from the App Store or Play Store.</>,
+      <>Online: Visit <a href="https://www.summitbankng.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">www.summitbankng.com</a></>,
+      <>Branch: Visit any Summit Bank branch or Agent account opening form</>,
+    
+    ],
+    reverse: true,
+    },
     {
       title: "What You'll Need",
-      image: "/account/current-1.png",
+      image: "/account/current-2.png",
       list: [
         "Completed account opening form",
         "Bank Verification Number (BVN)",
@@ -50,7 +64,7 @@ export default function page() {
     },
     {
       title: "Who Can Open a Current Account?",
-      image: "/account/current-2.png",
+      image: "/account/current-3.png",
       list: [
         "Individuals aged 18 and above",
         "Parents or guardians opening accounts on behalf of minors",
@@ -64,9 +78,13 @@ export default function page() {
   return (
     <div className="">
       <DefaultLayout>
+       
         <AccountHero text={heroDetails?.text} title={heroDetails?.title} />
         {/* <Partners /> */}
+        
         <FeaturesSection features={allFeatures} />
+
+
         {allSection?.map((res, index) => (
           <GenericSection
             title={res?.title}
