@@ -49,10 +49,10 @@ export default function GalleryPage() {
             >
               <div className="relative h-48 w-full">
                 <Image
-                  src="https://res.cloudinary.com/YOUR_CLOUD_NAME/image/upload/v1714567890/summit-website/image-name.jpg"
-                  alt="Summit Bank Team"
-                  width={800}
-                  height={600}
+                  src={folder.image}
+                  alt={folder.name}
+                  fill
+                  className="object-cover rounded-t-xl"
                   // src={folder.image}
                   // alt={folder.name}
                   // fill
