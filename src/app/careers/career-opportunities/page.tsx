@@ -11,7 +11,7 @@ export default function CareerOpportunitiesPage() {
     <main className="min-h-screen">
       <Header scrollState={false} />
       <GenericHero
-        text="Career Opportunities"
+        text=""
         title="Career Opportunities"
         subtitle="Explore exciting career paths at Summit Bank."
         image={"/careers.avif"}

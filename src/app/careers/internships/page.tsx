@@ -13,7 +13,7 @@ export default function InternshipsPage() {
       <Header scrollState={false} />
       <GenericHero
         title="Internship Programs"
-        text="."
+        text=""
         subtitle="Gain valuable experience with our internship opportunities."
         image={"/internship.jpg"}
       />
