@@ -25,7 +25,7 @@ export default function GalleryPage() {
         setFolderPreviews((prev) =>
           prev.map((f) =>
             f.path === folder.path && images.length
-              ? { ...f, image: `/gallery/${folder.path}/${images[0]}` }
+             ? { ...f, image: `/gallery/${folder.path}/${images[0]}` }
               : f
           )
         );
@@ -47,18 +47,15 @@ export default function GalleryPage() {
               href={`/gallery/${folder.path}`}
               className="block border rounded-xl shadow hover:shadow-lg transition"
             >
-              <div className="relative h-48 w-full">
+              <div className="relative w-full h-48">
                 <Image
                   src={folder.image}
                   alt={folder.name}
-                  fill
+                  fill={true} // ✅ OR just `fill` (boolean shorthand)
                   className="object-cover rounded-t-xl"
-                  // src={folder.image}
-                  // alt={folder.name}
-                  // fill
-                  // className="object-cover"
                 />
               </div>
+
               <div className="p-4 text-center font-semibold">{folder.name}</div>
             </Link>
           ))}
