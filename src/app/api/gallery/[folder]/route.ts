@@ -1,25 +1,28 @@
-import { NextResponse } from "next/server";
+import fs from "fs/promises";
 import path from "path";
-import fs from "fs";
+import { NextRequest } from "next/server";
 
 export async function GET(
-  req: Request,
+  req: NextRequest,
   context: { params: { folder: string } }
 ) {
-  const { folder } = await context.params; // ✅ await added here
-
+  const folder = context.params.folder;
   const folderPath = path.join(process.cwd(), "public", "gallery", folder);
 
   try {
-    const files = fs.readdirSync(folderPath);
-    const images = files.filter((file) =>
-      /\.(png|jpe?g|webp|svg)$/i.test(file)
-    );
-    return NextResponse.json(images);
+    const files = await fs.readdir(folderPath);
+    return new Response(JSON.stringify(files), {
+      status: 200,
+      headers: { "Content-Type": "application/json" },
+    });
   } catch (error) {
-    return NextResponse.json(
-      { error: "Folder not found" },
-      { status: 404 }
+    console.error("Folder read error:", error);
+    return new Response(
+      JSON.stringify({ error: "Folder not found or inaccessible" }),
+      {
+        status: 404,
+        headers: { "Content-Type": "application/json" },
+      }
     );
   }
 }
