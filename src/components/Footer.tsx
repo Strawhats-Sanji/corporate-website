@@ -8,6 +8,7 @@ import { BsLinkedin, BsTwitterX, BsYoutube } from "react-icons/bs";
 import { RiInstagramFill, RiLinkedinBoxFill, RiTiktokFill } from "react-icons/ri";
 import Image from "next/image";
 
+
 export default function Footer() {
   const links = [
     {
@@ -136,9 +137,9 @@ export default function Footer() {
               >
                 <Image
                   src="/logo/central-bank-of-nigeria.png"
-                  height={60}
+                  alt="CBN Logo"
                   width={60}
-                  alt="cbn"
+                  height={60}
                 />
                 Licensed by the Central Bank of Nigeria
                 <p></p>

@@ -6,6 +6,7 @@ import DefaultLayout from "@/components/layout/DefaultLayout";
 import GenericSection from "@/components/section/GenericSection";
 import { Testimonials } from "@/components/testimonials/Testimonials";
 import React from "react";
+import Image from "next/image";
 
 export default function TradeAndWorking() {
   const heroData = {

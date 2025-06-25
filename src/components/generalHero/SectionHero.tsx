@@ -3,6 +3,7 @@ import React from "react";
 import Framer from "../Framer";
 import { fadeIn, slideUp } from "@/lib/animation";
 
+
 export default function SectionHero({
   title,
   text,

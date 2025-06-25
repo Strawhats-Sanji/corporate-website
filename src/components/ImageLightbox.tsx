@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 import Modal from "react-modal";
 import Image from "next/image";
 import { X, ArrowLeft, ArrowRight } from "lucide-react";
+import { getCloudinaryUrl } from "@/lib/utils";
 
 Modal.setAppElement("body");
 
@@ -48,7 +49,7 @@ export default function ImageLightbox({
     >
       <div className="relative max-w-5xl w-full h-[80vh]">
         <Image
-          src={images[currentIndex]}
+          src={getCloudinaryUrl(images[currentIndex], { quality: 90 })}
           alt={`Image ${currentIndex + 1}`}
           fill
           className="object-contain"

@@ -21,6 +21,7 @@
     "embla-carousel-react": "^8.6.0",
     "framer-motion": "^12.6.5",
     "hamburger-react": "^2.5.2",
+    "js-yaml": "^4.1.0",
     "lucide": "^0.484.0",
     "lucide-react": "^0.484.0",
     "motion": "^12.9.2",
@@ -36,6 +37,7 @@
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
+    "@types/js-yaml": "^4.0.9",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",

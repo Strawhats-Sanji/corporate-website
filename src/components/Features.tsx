@@ -4,6 +4,7 @@ import React from "react";
 import Framer from "./Framer";
 import { fadeIn, fadeInLetters } from "@/lib/animation";
 
+
 export default function Features() {
   const features = [
     {
@@ -59,8 +60,8 @@ export default function Features() {
             className="relative lg:absolute -bottom-10 lg:bottom-0 w-fit object-contain h-full -right-10 md:-right-[25%] lg:right-0 z-0"
             src="/feature.png"
             alt="banner"
-            height={500}
-            width={500}
+            width={400}
+            height={400}
           />
         </Framer>
       </div>

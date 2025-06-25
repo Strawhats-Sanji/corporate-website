@@ -5,6 +5,7 @@ import Button from "./Button";
 import Framer from "./Framer";
 import { slideUp } from "@/lib/animation";
 
+
 export default function Banner() {
   const handleApply = () => {
     console.log("applied");
@@ -26,16 +27,16 @@ export default function Banner() {
       <Image
         className=" absolute bottom-0 object-cover md:object-contain w-full h-full left-0 z-0"
         src="/card-bg.png"
-        alt="banner"
-        height={1500}
-        width={1500}
+        alt="card-bg"
+        width={400}
+        height={400}
       />
       <Image
         className=" absolute bottom-0 object-contain w-full h-full left-0 z-0"
         src="/bg-summit.png"
-        alt="banner"
-        height={500}
-        width={500}
+        alt="bg-summit"
+        width={400}
+        height={400}
       />
     </div>
   );

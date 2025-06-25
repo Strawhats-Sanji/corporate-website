@@ -8,6 +8,7 @@ import Framer from "../Framer";
 import { zoomFade, zoomFadeBlur } from "@/lib/animation";
 import Link from "next/link";
 
+
 export default function ProductCard({
   heading,
   text,
@@ -86,7 +87,7 @@ export default function ProductCard({
               `}
               alt={heading}
             />
-            {/* <Image
+            <Image
               className={` transition-all duration-500 hidden opacity-0 group-hover:opacity-100 lg:absolute lg:block top-[50%] group-hover:top-8 z-0 w-[220px] right-6 object-cover ${
                 index !== 4 && "!hidden"
               }`}
@@ -94,7 +95,7 @@ export default function ProductCard({
               height={200}
               width={200}
               alt="salary"
-            /> */}
+            />
           </div>
         )}
       </div>
