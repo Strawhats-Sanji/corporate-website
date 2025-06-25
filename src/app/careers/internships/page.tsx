@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 import GenericHero from "@/components/generalHero/GenericHero";
 import Framer from "@/components/Framer";
 import { slideUp } from "@/lib/animation";
-
+//Here
 export default function InternshipsPage() {
   return (
     <main className="min-h-screen">
