@@ -6,7 +6,6 @@ import Framer from "./Framer";
 import { slideUp } from "@/lib/animation";
 import ProductCard from "./cards/ProductCard";
 import { useRouter } from "next/navigation";
-import SectionHero from "../generalHero/SectionHero";
 import { Carousel, Card } from "@/components/ui/apple-cards-carousel";
 
 
