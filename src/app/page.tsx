@@ -23,17 +23,6 @@ export default function Home() {
       <DefaultLayout>
         <HeroCarousel />
         <ProductsSection />
-        <div className="pb-0">
-          <GenericSection
-            title={loanSection?.title}
-            text={loanSection?.text}
-            image={loanSection?.image}
-            button={loanSection?.button}
-            buttonText={loanSection?.buttontext}
-            customClass={loanSection?.customClass}
-            reverse
-          />
-        </div>
         <Features />
         <IslamicFinances />
         {/* <RewardsSection /> */}
