@@ -12,7 +12,7 @@ interface HeroInterface {
   title: string;
   text: string;
 }
-
+//Txt
 export default function AccountHero({
   title,
   text,
