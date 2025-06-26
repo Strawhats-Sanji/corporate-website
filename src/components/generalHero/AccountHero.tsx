@@ -11,17 +11,11 @@ import ProductsSection from "@/components/section/ProductsSection";
 interface HeroInterface {
   title: string;
   text: string;
-  boxOne: string;
-  boxTwo: string;
-  boxThree: string;
 }
 
 export default function AccountHero({
   title,
   text,
-  boxOne,
-  boxTwo,
-  boxThree,
 }: HeroInterface) {
   const path = usePathname();
   const isPersonalAccounts = path.includes("personal-current-account");

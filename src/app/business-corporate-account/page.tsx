@@ -77,9 +77,6 @@ const allSection = [
         <AccountHero 
           text={heroDetails?.text} 
           title={heroDetails?.title} 
-          boxOne="Placeholder for box one" 
-          boxTwo="Placeholder for box two" 
-          boxThree="Placeholder for box three" 
         />
       {/* <Partners /> */}
         <FeaturesSection features={allFeatures} />
