@@ -14,7 +14,7 @@ export default function CareerOpportunitiesPage() {
         text=""
         title="Career Opportunities"
         subtitle="Explore exciting career paths at Summit Bank."
-        image={"/careers.avif"}
+        image={"/careers.png"}
       />
 
       <div className="main py-20 max-w-5xl mx-auto px-4">

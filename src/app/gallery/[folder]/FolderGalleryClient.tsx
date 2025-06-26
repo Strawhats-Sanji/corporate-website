@@ -1,21 +1,50 @@
 "use client";
 
-import { PhotoProvider, PhotoView } from "react-photo-view";
+import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
+import { PhotoSlider } from "react-photo-view";
 import "react-photo-view/dist/react-photo-view.css";
 import Image from "next/image";
+import { getCloudinaryUrl } from "@/lib/utils";
 
+const isCloudinaryUrl = (url: string) => url.startsWith('http');
+
+/**
+ * FolderGalleryClient
+ *
+ * This component is used in /gallery/[folder] to display all images for a gallery section (e.g., events, launch, team).
+ *
+ * Behavior:
+ * - On mount, immediately opens a modern photo viewer (PhotoSlider) with all images for the section.
+ * - When the viewer is closed, navigates back to the main gallery page (/gallery).
+ *
+ * Props:
+ * - images: string[] - Array of Cloudinary image URLs for the section, as defined in gallery.txt
+ */
 export default function FolderGalleryClient({ images }: { images: string[] }) {
+  const [visible, setVisible] = useState(false);
+  const [index, setIndex] = useState(0);
+  const router = useRouter();
+
+  useEffect(() => {
+    setVisible(true);
+  }, []);
+
+  const handleClose = () => {
+    setVisible(false);
+    // Delay navigation to allow close animation
+    setTimeout(() => {
+      router.push("/gallery");
+    }, 300);
+  };
+
   return (
-    <PhotoProvider>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {images.map((src, idx) => (
-          <PhotoView key={idx} src={src}>
-            <div className="relative w-full h-64 cursor-pointer overflow-hidden rounded-xl shadow hover:shadow-lg">
-              <Image src={src} alt={`Image ${idx + 1}`} fill className="object-cover" />
-            </div>
-          </PhotoView>
-        ))}
-      </div>
-    </PhotoProvider>
+    <PhotoSlider
+      images={images.map((src, idx) => ({ src, key: idx }))}
+      visible={visible}
+      onClose={handleClose}
+      index={index}
+      onIndexChange={setIndex}
+    />
   );
 }

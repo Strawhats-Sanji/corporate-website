@@ -25,6 +25,7 @@ import {
 } from "react-icons/ri";
 import { SiFacebook } from "react-icons/si";
 import { color } from "framer-motion";
+import { getCloudinaryUrl } from "@/lib/utils";
 
 export default function Header({ scrollState }: { scrollState: boolean }) {
   const [isOpen, setOpen] = useState(false);
@@ -474,10 +475,9 @@ export default function Header({ scrollState }: { scrollState: boolean }) {
 
             <Image
               src="/logo/central-bank-of-nigeria.png"
-              height={30}
-              width={30}
-              className="rounded-full"
-              alt="cbn"
+              alt="CBN Logo"
+              width={60}
+              height={60}
             />
             Licensed by the Central Bank of Nigeria
 

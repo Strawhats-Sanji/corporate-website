@@ -54,28 +54,40 @@ export default function About() {
         /> */}
 
         <div className="main py-20 !pt-[160px]">
-          <div className="grid md:grid-cols-[5fr_7fr] space-y-6">
-            <div className="h-fit">
-              <Framer animation={slideUp(0.8)}>
-                <h3 id="history" className="scroll-mt-[160px]">Our History</h3>
-              </Framer>
-            </div>
-            <Framer animation={slideUp(0.6)}>
-              <div>
-                <p>
-                  Summit Bank Limited was incorporated on 15th July 2024, as a limited liability company and licensed on 5th February 2025, by the Central Bank of Nigeria (CBN) to provide non-interest banking services to the public. The Bank is positioned to become one of the most efficient digital and service focused banks in Nigeria.
-                </p>
-                <br />
-                <p> 
-                  Summit Bank offers banking services that are not interest-based transactions. Instead, it emphasizes profit-and-loss sharing arrangements, ethical investments, and risk-sharing partnerships with its clients. This model aims to promote financial inclusion, social justice, economic equity and moral accountability.
-                </p>
-                <br />
-                <p>
-                  Currently, Summit Bank has fulfilled all regulatory requirements and is in the process of commencing full operations.
-                </p>
-              </div>
-            </Framer>
-          </div>
+     <div className="grid md:grid-cols-[5fr_7fr] gap-10 items-start">
+  {/* Left Column with header and image */}
+  <div className="space-y-6 h-fit">
+    <Framer animation={slideUp(0.8)}>
+      <h3 id="history" className="scroll-mt-[160px]">Our History</h3>
+    </Framer>
+    <Framer animation={slideUp(1)}>
+      <div className="relative w-full h-[300px] rounded-lg overflow-hidden shadow-lg">
+        <Image
+          src="/building.png" // Replace with your actual path
+          alt="Our History"
+          fill
+          className="object-cover"
+        />
+      </div>
+    </Framer>
+  </div>
+
+  {/* Right Column with text (moved down slightly using mt-6) */}
+  <Framer animation={slideUp(0.6)}>
+    <div className="space-y-4 text-justify leading-relaxed mt-6">
+      <p>
+        Summit Bank Limited was incorporated on 15th July 2024, as a limited liability company and licensed on 5th February 2025, by the Central Bank of Nigeria (CBN) to provide non-interest banking services to the public. The Bank is positioned to become one of the most efficient digital and service focused banks in Nigeria.
+      </p>
+      <p>
+        Summit Bank offers banking services that are not interest-based transactions. Instead, it emphasizes profit-and-loss sharing arrangements, ethical investments, and risk-sharing partnerships with its clients. This model aims to promote financial inclusion, social justice, economic equity and moral accountability.
+      </p>
+      <p>
+        Currently, Summit Bank has fulfilled all regulatory requirements and is in the process of commencing full operations.
+      </p>
+    </div>
+  </Framer>
+</div>
+
         </div>
         <div className="grid main lg:grid-cols-2">
           <div className="lg:mt-[100px]">

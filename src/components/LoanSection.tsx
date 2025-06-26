@@ -5,6 +5,7 @@ import Button from "./Button";
 import { ArrowRight } from "lucide-react";
 import Framer from "./Framer";
 import { slideUp, zoomFade, zoomFadeBlur } from "@/lib/animation";
+import { getCloudinaryUrl } from "@/lib/utils";
 
 export default function FinanceSection() {
   const handleApply = () => {
@@ -18,8 +19,8 @@ export default function FinanceSection() {
             <Image
               className=" h-full w-full object-top object-cover"
               src="/finance.png"
-              height={300}
-              width={300}
+              height={400}
+              width={400}
               alt="finance"
             />
           </Framer>

@@ -15,7 +15,7 @@ export default function InternshipsPage() {
         title="Internship Programs"
         text=""
         subtitle="Gain valuable experience with our internship opportunities."
-        image={"/internship.jpg"}
+        image={"/internship.png"}
       />
       <div className="main py-20">
         <Framer animation={slideUp(0.6)}>

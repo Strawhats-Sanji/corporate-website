@@ -5,6 +5,7 @@ import Button from "./Button";
 import { ArrowBigRight, ArrowRight } from "lucide-react";
 import Framer from "./Framer";
 import { fadeIn, fadeInLetters, slideUp, zoomIn } from "@/lib/animation";
+import { getCloudinaryUrl } from "@/lib/utils";
 
 export default function Hero() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -91,7 +92,7 @@ export default function Hero() {
             }`}
           />
           <Image
-            src={require("../../public/Medication.svg")}
+            src="/Medication.svg"
             alt={heroData[currentIndex].text}
             height={300}
             width={300}
@@ -101,7 +102,7 @@ export default function Hero() {
             }`}
           />
           <Image
-            src={require("../../public/transaction.svg")}
+            src="/transaction.svg"
             alt={heroData[currentIndex].text}
             height={300}
             width={300}

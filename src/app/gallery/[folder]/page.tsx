@@ -1,6 +1,7 @@
 // app/gallery/[folder]/page.tsx
 import fs from "fs/promises";
 import path from "path";
+import yaml from "js-yaml";
 import FolderGalleryClient from "./FolderGalleryClient";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -12,20 +13,23 @@ interface PageProps {
   }>;
 }
 
-// 2. Use the props type in your page component
+async function getGalleryImages(folder: string): Promise<string[]> {
+  const galleryYmlPath = path.join(process.cwd(), "gallery.yml");
+  const content = await fs.readFile(galleryYmlPath, "utf-8");
+  const data = yaml.load(content) as Record<string, string[]>;
+  // Normalize keys to lowercase for matching
+  const key = Object.keys(data).find(
+    (k) => k.trim().toLowerCase() === folder.toLowerCase()
+  );
+  return key ? data[key] : [];
+}
+
 export default async function FolderGalleryPage({ params }: PageProps) {
-
   const { folder } = await params;
-  const folderPath = path.join(process.cwd(), "public", "gallery", folder);
-
-
   let images: string[] = [];
-
   try {
-    const files = await fs.readdir(folderPath);
-    images = files.map((file) => `/gallery/${folder}/${file}`);
+    images = await getGalleryImages(folder);
   } catch (error) {
-
     return (
       <main className="min-h-screen flex items-center justify-center">
         <p className="text-xl text-red-600">Folder not found or no images</p>
@@ -45,15 +49,14 @@ export default async function FolderGalleryPage({ params }: PageProps) {
   );
 }
 
-// 3. Optionally add types here too
 export async function generateStaticParams(): Promise<{ folder: string }[]> {
-  const galleryPath = path.join(process.cwd(), "public", "gallery");
+  const galleryYmlPath = path.join(process.cwd(), "gallery.yml");
   try {
-    const folders = await fs.readdir(galleryPath);
-    return folders.map((folder) => ({ folder }));
+    const content = await fs.readFile(galleryYmlPath, "utf-8");
+    const data = yaml.load(content) as Record<string, string[]>;
+    return Object.keys(data).map((folder) => ({ folder: folder.trim() }));
   } catch (error) {
-    console.error("Gallery folder not found:", error);
+    console.error("gallery.yml not found:", error);
   }
   return [];
-
 }
