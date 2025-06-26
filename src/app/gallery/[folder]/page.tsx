@@ -8,9 +8,7 @@ import Footer from "@/components/Footer";
 
 // 1. Define the expected props type
 interface PageProps {
-  params: Promise<{
-    folder: string;
-  }>;
+  params: { folder: string };
 }
 
 async function getGalleryImages(folder: string): Promise<string[]> {
@@ -25,7 +23,7 @@ async function getGalleryImages(folder: string): Promise<string[]> {
 }
 
 export default async function FolderGalleryPage({ params }: PageProps) {
-  const { folder } = await params;
+  const { folder } = params;
   let images: string[] = [];
   try {
     images = await getGalleryImages(folder);

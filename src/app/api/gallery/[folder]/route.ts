@@ -4,9 +4,9 @@ import fs from "fs";
 
 export async function GET(
   req: Request,
-  context: { params: { folder: string } }
+  { params }: { params: { folder: string } }
 ) {
-  const { folder } = await context.params; // ✅ await added here
+  const { folder } = params;
 
   const folderPath = path.join(process.cwd(), "public", "gallery", folder);
 
