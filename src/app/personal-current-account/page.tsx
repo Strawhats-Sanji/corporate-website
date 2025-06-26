@@ -17,7 +17,7 @@ export default function page() {
     text: "Bank freely with a Shari'ah-compliant current account that gives you control, convenience, and peace of mind.",
   };
 
-  
+  // TX
   const allFeatures = [
     {
       title: "Online & Mobile Banking",
