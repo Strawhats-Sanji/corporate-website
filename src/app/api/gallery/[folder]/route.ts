@@ -32,22 +32,28 @@ import fs from "fs/promises";
 import path from "path";
 import { NextRequest } from "next/server";
 
-// ✅ Correct types for dynamic route handlers
+// ✅ Correct type signature for dynamic route handlers
 export async function GET(
-  req: NextRequest,
-  { params }: { params: Record<string, string> }
+  _req: NextRequest,
+  { params }: { params: { folder: string } }
 ) {
   const folder = params.folder;
   const folderPath = path.join(process.cwd(), "public", "gallery", folder);
 
   try {
     const files = await fs.readdir(folderPath);
-    return new Response(JSON.stringify(files), {
+
+    // Only return image files
+    const imageFiles = files.filter(file =>
+      /\.(jpg|jpeg|png|webp|gif|svg)$/i.test(file)
+    );
+
+    return new Response(JSON.stringify(imageFiles), {
       status: 200,
       headers: { "Content-Type": "application/json" },
     });
   } catch (error) {
-    console.error("Folder read error:", error);
+    console.error("📂 Folder read error:", error);
     return new Response(
       JSON.stringify({ error: "Folder not found or inaccessible" }),
       {
