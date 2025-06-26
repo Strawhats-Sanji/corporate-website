@@ -32,11 +32,13 @@ import fs from "fs/promises";
 import path from "path";
 import { NextRequest } from "next/server";
 
+// ✅ Correct types for dynamic route handlers
 export async function GET(
   req: NextRequest,
-  { params }: { params: { folder: string } }
+  { params }: { params: Record<string, string> }
 ) {
-  const folderPath = path.join(process.cwd(), "public", "gallery", params.folder);
+  const folder = params.folder;
+  const folderPath = path.join(process.cwd(), "public", "gallery", folder);
 
   try {
     const files = await fs.readdir(folderPath);
