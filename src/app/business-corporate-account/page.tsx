@@ -14,7 +14,7 @@ import { text } from "stream/consumers";
 export default function page() {
   const heroDetails = {
     title: "Corporate Current Account (Qard)",
-    text: "These are structured based on the customer’s risk and return expectations.",
+    text: "These are structured based on the customer's risk and return expectations.",
   };
 
   const allFeatures = [
@@ -52,7 +52,7 @@ const allSection = [
         "Board resolution",
         "TIN - Tax Identification Number ",
         "BVN - Bank Verification Number",
-        "Valid means of identification (National ID, Int’l Passport, Driver’s License, or Voter’s Card)",
+        "Valid means of identification (National ID, Int'l Passport, Driver's License, or Voter's Card)",
         "Proof of business address (Utility bill or Tenancy agreement)",
         "Passport photograph",
         
@@ -74,7 +74,13 @@ const allSection = [
   return (
     <div className="">
       <DefaultLayout>
-        <AccountHero text={heroDetails?.text} title={heroDetails?.title} />
+        <AccountHero 
+          text={heroDetails?.text} 
+          title={heroDetails?.title} 
+          boxOne="Placeholder for box one" 
+          boxTwo="Placeholder for box two" 
+          boxThree="Placeholder for box three" 
+        />
       {/* <Partners /> */}
         <FeaturesSection features={allFeatures} />
         {allSection?.map((res, index) => (
