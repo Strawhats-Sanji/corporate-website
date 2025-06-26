@@ -21,7 +21,7 @@ export default function SectionHero({
   textClass?: any;
   imageClass?: any;
   mainClass?: any;
-  subtitle?: string;
+  subtitle?: React.ReactNode;
 }) {
   return (
     <div
