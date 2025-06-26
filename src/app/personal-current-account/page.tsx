@@ -44,7 +44,7 @@ const allSection = [
     list: [
       <>Mobile App: Download Summit Bank App from the App Store or Play Store.</>,
       <>Online: Visit <a href="https://www.summitbankng.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">www.summitbankng.com</a></>,
-      <>Branch: Visit any Summit Bank branch or Agent account opening form</>,
+      <>Branch: Visit any Summit Bank branch or Agent Kiosk</>,
     
     ],
     reverse: true,
