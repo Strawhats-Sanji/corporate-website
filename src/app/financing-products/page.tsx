@@ -63,7 +63,7 @@ export default function FinancingProducts() {
           image={heroData.image}
           title={heroData?.title}
           text={heroData?.text}
-          subtitle={heroData?.subtitle}
+          // subtitle={heroData?.subtitle}
           // buttonText={heroData?.buttonText}
           // buttonFn={getStarted}
         />
