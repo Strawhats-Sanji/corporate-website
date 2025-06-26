@@ -7,7 +7,7 @@ import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import { usePathname } from "next/navigation";
 
-//Deploymemnt Effort|StrawHat|Taiwo
+//Deploymemnt Effort|StrawHat|Taiwo|StrawHats
 interface HeroInterface {
   title: string;
   text: string;
