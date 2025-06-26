@@ -4,7 +4,6 @@ import AccountHero from "@/components/generalHero/AccountHero";
 import DefaultLayout from "@/components/layout/DefaultLayout";
 import Partners from "@/components/Partners";
 import FeaturesSection from "@/components/section/FeaturesSection";
-import FeatureBox from "@/components/FeatureBox";
 import GenericSection from "@/components/section/GenericSection";
 import { Testimonials } from "@/components/testimonials/Testimonials";
 import Image from "next/image";
