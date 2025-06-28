@@ -52,8 +52,8 @@ export default function CareerOpportunitiesPage() {
 
           <p className="mt-6 text-lg">
             📧{" "}
-            <a href="mailto:careers@summitbank.com" className="text-secondary-color underline hover:text-secondary-dark">
-              careers@summitbank.com
+            <a href="mailto:careers@summitbankng.com" className="text-secondary-color underline hover:text-secondary-dark">
+              careers@summitbankng.com
             </a>
           </p>
         </Framer>

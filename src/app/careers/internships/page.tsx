@@ -40,8 +40,8 @@ export default function InternshipsPage() {
           </p>
           <p className="mt-4">
             📧{" "}
-            <a href="mailto:internships@summitbank.com" className="text-secondary-color hover:underline">
-              internships@summitbank.com
+            <a href="mailto:internships@summitbankng.com" className="text-secondary-color hover:underline">
+              internships@summitbankng.com
             </a>
           </p>
         </Framer>

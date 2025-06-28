@@ -37,7 +37,7 @@ export default function page() {
 
   const allSection = [
     {
-      title: "What You'll Need",
+      title: "What You Will Need",
       image: "/account/current-1.png",
       list: [
         "Completed account opening form",

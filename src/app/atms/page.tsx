@@ -9,65 +9,91 @@ export default function Atms() {
       locationType: "Head Office",
       address: "5 Amal Pepple Street, Off Ameyo Adadevoh Way, Jahi, Abuja.",
       phone: "+234 (0) 700 700 0005",
-      email: "info@summitbankng.com",
+      email: "digitalbankingsupport@summitbankng.com",
     },
     {
       state: "KANO",
-      locationType: "Branch Office",
-      address: "France Road Branch - 32-40 Home Plus Plaza, France Road, Kano.",
+      locationType: "France Road Branch",
+      address: "32-40 Home Plus Plaza, France Road, Kano.",
       phone: "+234 (0) 700 700 0005",
-      email: "info@summitbankng.com",
+      email: "digitalbankingsupport@summitbankng.com",
     },
     {
       state: "KANO",
-      locationType: "Branch Office",
-      address: "Bank Road Branch - No. 2, Bank Road, Kano State.",
+      locationType: "Bank Road Branch",
+      address: "No. 2, Bank Road, Kano State.",
       phone: "+234 (0) 700 700 0005",
-      email: "info@summitbankng.com",
+      email: "digitalbankingsupport@summitbankng.com",
     },
     {
       state: "LAGOS",
       locationType: "Liaison Office",
       address: "234 Adeola Odeku Street, 3rd Floor, Victoria Island, Lagos.",
       phone: "+234 (0) 700 700 0005",
-      email: "info@summitbankng.com",
+      email: "digitalbankingsupport@summitbankng.com",
     },
   ];
 
+  // Group by state
+  const groupedOffices = offices.reduce((acc, office) => {
+    if (!acc[office.state]) {
+      acc[office.state] = [];
+    }
+    acc[office.state].push(office);
+    return acc;
+  }, {} as Record<string, typeof offices>);
+
   return (
-    <div>
-      <DefaultLayout>
-        <SectionHero
-          mainClass={"bg-pattern !text-white py-10 rounded-2xl"}
-          title="ATM Locations"
-          subtitle="Summit Bank"
-        />
-        <div className="">
-          <div className="main pt-20 py-10">
-            <div className="w-full grid lg:grid-cols-2 flex-col gap-20">
-              {offices.map((branch) => (
-                <div key={branch.state} className="w-full space-y-2">
-                  <h5 className="!font-semibold ">{branch.locationType}</h5>
-                  <h5 className="">{branch.state}</h5>
-                  <ul className="space-y-1">
-                    <li className="cursor-pointer hover:underline hover:text-[var(--secondary-color)] transition-all duration-300">
+    <DefaultLayout>
+      <SectionHero
+        mainClass="bg-pattern !text-white py-10 rounded-2xl"
+        title="ATM Locations"
+        subtitle="Summit Bank"
+      />
+
+      <section className="pt-16 pb-24 px-4 md:px-12">
+        <div className="max-w-6xl mx-auto space-y-16">
+          {Object.entries(groupedOffices).map(([state, branches]) => (
+            <div key={state}>
+              <h2 className="text-3xl font-bold text-[var(--primary-color)] border-b border-red-300 pb-2 mb-6 uppercase tracking-wide">
+                {state}
+              </h2>
+              <div className="grid md:grid-cols-2 gap-10">
+                {branches.map((branch, index) => (
+                  <div
+                    key={index}
+                    className="p-6 rounded-2xl bg-white dark:bg-neutral-900 shadow-sm border border-gray-100 dark:border-neutral-700 space-y-3 text-justify"
+                  >
+                    <h3 className="text-lg font-semibold text-neutral-800 dark:text-neutral-100">
+                      {branch.locationType}
+                    </h3>
+                    <p className="text-neutral-600 dark:text-neutral-300">
                       {branch.address}
-                    </li>
-                    <li>
-                      <a href={`tel:${branch.phone}`} className="block">{branch.phone}</a>
-                    </li>
-                    <li>
-                      <a href={`mailto:${branch.email}`} className="block text-blue-600 hover:underline">
+                    </p>
+                    <p>
+                      <a
+                        href={`tel:${branch.phone}`}
+                        className="text-neutral-800 dark:text-neutral-100 hover:text-[var(--secondary-color)] transition"
+                      >
+                        {branch.phone}
+                      </a>
+                    </p>
+                    <p>
+                      <a
+                        href={`mailto:${branch.email}`}
+                        className="text-blue-600 hover:underline"
+                      >
                         {branch.email}
                       </a>
-                    </li>
-                  </ul>
-                </div>
-              ))}
+                    </p>
+                  </div>
+                ))}
+              </div>
             </div>
-          </div>
+          ))}
         </div>
-      </DefaultLayout>
-    </div>
+      </section>
+    </DefaultLayout>
   );
 }
+
