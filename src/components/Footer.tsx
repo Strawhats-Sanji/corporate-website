@@ -138,8 +138,8 @@ export default function Footer() {
                 <Image
                   src="/logo/central-bank-of-nigeria.png"
                   alt="CBN Logo"
-                  width={60}
-                  height={60}
+                  width={30}
+                  height={30}
                 />
                 Licensed by the Central Bank of Nigeria
                 <p></p>

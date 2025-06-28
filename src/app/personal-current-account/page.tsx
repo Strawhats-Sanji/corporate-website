@@ -50,7 +50,7 @@ const allSection = [
     reverse: true,
     },
     {
-      title: "What You'll Need",
+      title: "What You Will Need",
       image: "/account/current-2.png",
       list: [
         "Completed account opening form",

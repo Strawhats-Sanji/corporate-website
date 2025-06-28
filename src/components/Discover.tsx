@@ -23,7 +23,7 @@ export default function Discover() {
           <Framer animation={fadeIn("up", 0.8)}>
             <p className="!text-white 2xl:w-[800px]">
               Discover the convenience of banking from the palm of your hand and
-              experience banking on the go quickly and securely
+              experience secure banking on the go.
             </p>
           </Framer>
           <div className="pt-4">
