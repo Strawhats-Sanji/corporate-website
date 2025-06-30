@@ -25,8 +25,9 @@ export default function GalleryPage() {
     
     async function fetchGalleryPreviews() {
       try {
-        const res = await fetch("/api/gallery-txt");
-        const data = await res.json();
+        const res = await fetch('/api/gallery');
+        const text = await res.json();
+
         setFolderPreviews(data);
       } catch (e) {
         console.error("Error loading gallery previews", e);
