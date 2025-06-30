@@ -16,9 +16,9 @@ export const metadata: Metadata = {
   title: "Summit Bank",
   description: "SummitBank corporate website",
   icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon-32x32.png",
-    apple: "/favicon-32x32.png",
+    icon: "/favicon-v1.ico",
+    shortcut: "/favicon-v1-32x32.png",
+    apple: "/favicon-v1-32x32.png",
   },
 };
 
