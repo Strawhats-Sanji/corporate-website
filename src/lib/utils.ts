@@ -13,6 +13,8 @@ export function cn(...inputs: ClassValue[]) {
  */
 export function getCloudinaryUrl(path: string, options?: { width?: number; quality?: number; format?: string }): string {
   const cloudName = process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME || process.env.CLOUDINARY_CLOUD_NAME;
+  // console.log("Cloudinary cloudName:", cloudName); // 👈 Add this
+  
   if (!cloudName) throw new Error('Cloudinary cloud name is not set');
 
   // Determine if the image is from the gallery or elsewhere

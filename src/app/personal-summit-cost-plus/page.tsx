@@ -18,7 +18,7 @@ export default function page() {
 
   const allFeatures = [
     {
-      title: "Online & Mobile Bankincost-plus mark-up financing",
+      title: "Online & Mobile Banking",
       text: "Manage your money anytime, anywhere with our intuitive mobile app and online banking platform.",
     },
     {
