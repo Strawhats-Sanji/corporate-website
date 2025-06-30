@@ -22,6 +22,7 @@ export default function GalleryPage() {
   );
 
   useEffect(() => {
+    
     async function fetchGalleryPreviews() {
       try {
         const res = await fetch("/api/gallery-txt");
