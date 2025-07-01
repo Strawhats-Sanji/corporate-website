@@ -13,30 +13,30 @@ import React from "react";
 export default function page() {
   const heroDetails = {
     title: "Summit Cost-Plus - SCP (Murabaha)",
-    text: "Bank freely with a Shari'ah-compliant current account that gives you control, convenience, and peace of mind.",
+    text: "These are structured to enable customers acquire assets through transparent, fixed-profit sales.",
   };
 
   const allFeatures = [
-    {
-      title: "Online & Mobile Banking",
-      text: "Manage your money anytime, anywhere with our intuitive mobile app and online banking platform.",
-    },
-    {
-      title: "Structured payment plans",
-      text: "Enjoy true financial freedom with zero minimum balance requirements and no hidden restrictions.",
-    },
-    {
-      title: "Available for vehicles, household goods and consumables",
-      text: "Access your funds easily with our debit card and personalized cheque book.",
-    },
-    {
-      title: "No hidden charges",
-      text: "Make quick, reliable and secure transactions with comprehensive payment solutions.",
-    },
-    {
-      title: "Shariah-compliant documentation",
-      text: "Make quick, reliable and secure transactions with comprehensive payment solutions.",
-    },
+   {
+         title: "Shariah-compliant purchase financing",
+         text: "Summit purchases the asset on your behalf and resells it to you at a pre-agreed profit margin.",
+       },
+       {
+         title: "Fixed and predictable payments",
+         text: "Clear, fixed monthly or quarterly payment plans. No surprise charges, your payment structure is known from day one.",
+       },
+       {
+         title: "Inventory, trade, capital, guarantees.",
+         text: "Applicable for goods such as equipment, inventory, vehicles, or other approved tangible assets.",
+       },
+       {
+         title: "Insurance cover from reputable Takaful Company",
+         text: "Access to Islamic insurance (Takaful) to protect the financed asset, ensuring added peace of mind.",
+       },
+       {
+         title: "No hidden charges",
+         text: "All fees, costs, and profit margins are disclosed in advance.",
+       },
   ];
 
   const allSection = [

@@ -17,10 +17,12 @@ export default function FeaturesCard({
       <div className="p-10 flex flex-col justify-center items-center text-center space-y-6">
         <Image
           src={
-            index ==0 ? "/account/mobile-icon.svg": 
-            index ==1 ? "/account/balance-icon.svg" :
-            index ==2 ? "/account/debit-card.svg" :
-            index ==3 ? "/account/funds-icon.svg" : 
+            index ==0 ? "/account/homes-icon.svg": 
+            index ==1 ? "/account/lease-icon.svg" :
+            index ==2 ? "/account/pricing-icon.svg" :
+            index ==3 ? "/account/tenor-icon.svg" : 
+            index ==4 ? "/account/insurance-icon.svg" :
+            index ==5 ? "/account/clause-icon.svg" :
             "/account/mobile-icon.svg"
           }
           height={40}

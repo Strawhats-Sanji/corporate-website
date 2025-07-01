@@ -185,7 +185,12 @@ export default function Footer() {
                 </a>
               </div>
             </div>
-            <div className="">All Rights Reserved.</div>
+            <div className="flex items-center gap-2">
+              <Link href="/privacy-policy" className="hover:underline text-sm text-gray-400">
+                Privacy Policy
+              </Link>
+              <span className="text-sm text-gray-600">| All Rights Reserved.</span>
+            </div>
           </div>
         </div>
       </div>

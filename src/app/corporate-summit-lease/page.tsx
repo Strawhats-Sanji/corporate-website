@@ -12,38 +12,34 @@ import React from "react";
 export default function page() {
   const heroDetails = {
     title: "Summit Lease to Own Finance - SLOF (Ijara)",
-    text: "These are structured based on the customer’s risk and return expectations.",
+    text: "These are Flexible, Shariah-Compliant Lease Financing for Long-Term Asset Ownership",
   };
 
   const allFeatures = [
     {
+      title: "Available for homes, cars, and equipment",
+      text: "Finance is tied to a tangible asset such as vehicles, equipment, or property.",
+    },
+    {
       title: "Lease with an option to own at the end of the tenure",
-      text: "Manage your money anytime, anywhere with our intuitive mobile app and online banking platform.",
+      text: "Full ownership is transferred to the client at the end of the lease term.",
     },
     {
       title: "Transparent pricing",
-      text: "Enjoy true financial freedom with zero minimum balance requirements and no hidden restrictions.",
+      text: "Detailed Ijara contract outlining rights, responsibilities, and costs.",
     },
     {
       title: "Flexible tenor and payment plan",
-      text: "Access your funds easily with our debit card and personalized cheque book.",
+      text: "Tenors typically range from 12 to 60 months. Customizable monthly or quarterly payment schedules.",
     },
     {
       title: "Insurance cover from reputable Takaful Company",
-      text: "Access your funds easily with our debit card and personalized cheque book.",
+      text: "Coverage is provided via approved Takaful operators in line with Islamic financial principles.",
     },
     {
       title: "No hidden charges",
-      text: "Access your funds easily with our debit card and personalized cheque book.",
+      text: "No hidden fees or interest-based clauses.",
     },
-    {
-      title: "Available for homes, cars, and equipment",
-      text: "Access your funds easily with our debit card and personalized cheque book.",
-    },
-
-      
-    
- 
   ]
 const allSection = [
     {

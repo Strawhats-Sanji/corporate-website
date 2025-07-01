@@ -14,7 +14,7 @@ import { text } from "stream/consumers";
 export default function page() {
   const heroDetails = {
     title: "Customized Investment Plan – CIP",
-    text: "These are structured based on the customer’s risk and return expectations.",
+    text: "These are tailor-made investment solutions designed to align with your unique risk profile and financial goals for optimal returns.",
   };
 
   const allFeatures = [
@@ -33,10 +33,9 @@ export default function page() {
     {
       title: "Regular profit distributions",
       text: "Access your funds easily with our debit card and personalized cheque book.",
+
     },
-      
     
- 
   ]
 const allSection = [
     {

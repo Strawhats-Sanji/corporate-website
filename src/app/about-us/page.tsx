@@ -79,10 +79,10 @@ export default function About() {
         Summit Bank Limited was incorporated on 15th July 2024, as a limited liability company and licensed on 5th February 2025, by the Central Bank of Nigeria (CBN) to provide non-interest banking services to the public. The Bank is positioned to become one of the most efficient digital and service focused banks in Nigeria.
       </p>
       <p>
-        Summit Bank offers banking services that are not interest-based transactions. Instead, it emphasizes profit-and-loss sharing arrangements, ethical investments, and risk-sharing partnerships with its clients. This model aims to promote financial inclusion, social justice, economic equity and moral accountability.
+        Summit Bank offers banking services that are non-interest-based transactions. Summit Bank emphasizes profit-and-loss sharing arrangements, ethical investments, and risk-sharing partnerships with its clients. This model aims to promote financial inclusion, social justice, economic equity and moral accountability.
       </p>
       <p>
-        Currently, Summit Bank has fulfilled all regulatory requirements and is in the process of commencing full operations.
+        Summit Bank is a forward-thinking Nigerian financial institution established to redefine banking through innovation, customer-centric solutions, and a strong commitment to integrity and excellence.
       </p>
     </div>
   </Framer>

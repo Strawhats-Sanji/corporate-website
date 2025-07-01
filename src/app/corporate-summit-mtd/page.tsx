@@ -14,30 +14,34 @@ import { text } from "stream/consumers";
 export default function page() {
   const heroDetails = {
     title: "Summit MTD (Mudarabah)",
-    text: "These are structured based on the customer’s risk and return expectations.",
+    text: "Your funds are ethically invested and profits are shared between you and the bank based on a pre-agreed ratio.",
   };
 
   const allFeatures = [
-    {
-      title: "Shariah compliant investment alternative to fixed deposit",
-      text: "Manage your money anytime, anywhere with our intuitive mobile app and online banking platform.",
-    },
-    {
-      title: "Higher returns compared to savings account",
-      text: "Enjoy true financial freedom with zero minimum balance requirements and no hidden restrictions.",
-    },
-    {
-      title: "Profit shared based on agreed sharing ratio with the bank",
-      text: "Access your funds easily with our debit card and personalized cheque book.",
-    },
-    {
-      title: "Flexible investment period",
-      text: "Access your funds easily with our debit card and personalized cheque book.",
-    },
-    {
-      title: "Reinvestment options",
-      text: "Access your funds easily with our debit card and personalized cheque book.",
-    },
+   {
+         title: "Shariah compliant investment alternative to fixed deposit",
+         text: "Grow your wealth ethically through profit-sharing, without interest, in accordance with Islamic principles.",
+       },
+       {
+         title: "Higher returns compared to savings account",
+         text: "Earn competitive profits through well-managed investments, offering better potential returns than traditional savings.",
+       },
+       {
+         title: "Fair profit-sharing model",
+         text: "Enjoy transparent earnings where profits are distributed based on a pre-agreed ratio between you and the bank.",
+       },
+       {
+         title: "Flexible investment period",
+         text: "Choose from a range of tenures tailored to your financial goals, whether short-term or long-term.",
+       },
+       {
+         title: "Reinvestment options",
+         text: "Easily roll over your matured investment or reinvest profits for compounded growth.",
+       },
+       {
+         title: "Available for homes, cars, and equipment",
+         text: "Ideal for funding goals like home ownership, vehicle acquisition, or equipment purchase through ethical financing.",
+       },
  
   ]
 const allSection = [
