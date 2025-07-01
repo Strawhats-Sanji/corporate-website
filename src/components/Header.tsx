@@ -340,15 +340,15 @@ export default function Header({ scrollState }: { scrollState: boolean }) {
             },
           ]
         },
-        {
-          text: "",
-          links: [
-            {
-              name: "Gallery",
-              link: "/gallery",
-            },
-          ]
-        },
+        // {
+        //   text: "",
+        //   links: [
+        //     {
+        //       name: "Gallery",
+        //       link: "/gallery",
+        //     },
+        //   ]
+        // },
         {
           text: "",
           links: [
