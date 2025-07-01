@@ -14,28 +14,27 @@ import { text } from "stream/consumers";
 export default function page() {
   const heroDetails = {
     title: "Summit Sukuk Investments - SSI",
-    text: "Bank freely with a Shari'ah-compliant current account that gives you control, convenience, and peace of mind.",
+    text: "These are structured to offer stable returns through ethically structured sukuk, with consistent profit distributions and easy digital access.",
   };
 
   const allFeatures = [
     {
       title: "Shariah-compliant bonds with stable returns",
-      text: "manage your money anytime, anywhere with our intuitive mobile app and online banking platform.",
+      text: "Invest confidently in sukuk—ethical, low-volatility instruments that offer stable returns backed by tangible assets.",
     },
     {
       title: "Low-risk investment options",
-      text: "Enjoy true financial freedom with zero minimum balance requirements and no hidden restrictions.",
+      text: "Minimize exposure while maximizing returns through a risk-averse investment structure suitable for long-term financial planning.",
     },
     {
       title: "Diversified portfolio opportunities",
-      text: "Access your funds easily with our debit card and personalized cheque book.",
+      text: "Tap into a curated mix of sukuk options, helping you diversify your investments without compromising on security or transparency.",
     },
     {
       title: "Regular profit distributions",
-      text: "Access your funds easily with our debit card and personalized cheque book.",
+      text: "Receive consistent returns with periodic profit payouts, giving you predictable income throughout your investment tenure.",
+
     },
-      
-    
  
   ]
 const allSection = [

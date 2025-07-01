@@ -13,24 +13,34 @@ import React from "react";
 export default function page() {
   const heroDetails = {
     title: "Summit Lease to Own Finance - SLOF (Ijara)",
-    text: "Bank freely with a Shari'ah-compliant current account that gives you control, convenience, and peace of mind.",
+    text: "These are Flexible, Shariah-Compliant Lease Financing for Long-Term Asset Ownership",
   };
 
   const allFeatures = [
     {
-      title: "Lease that ends with ownership",
-      text: "Manage your money anytime, anywhere with our intuitive mobile app and online banking platform.",
+      title: "Available for homes, cars, and equipment",
+      text: "Finance is tied to a tangible asset such as vehicles, equipment, or property.",
     },
     {
-      title: "Available for all residential types and vehicle finance",
-      text: "Enjoy true financial freedom with zero minimum balance requirements and no hidden restrictions.",
+      title: "Lease with an option to own at the end of the tenure",
+      text: "Full ownership is transferred to the client at the end of the lease term.",
     },
     {
-      title: "Transparent pricing with no interest charges",
-      text: "Access your funds easily with our debit card and personalized cheque book.",
+      title: "Transparent pricing",
+      text: "Detailed Ijara contract outlining rights, responsibilities, and costs.",
     },
-    
- 
+    {
+      title: "Flexible tenor and payment plan",
+      text: "Tenors typically range from 12 to 60 months. Customizable monthly or quarterly payment schedules.",
+    },
+    {
+      title: "Insurance cover from reputable Takaful Company",
+      text: "Coverage is provided via approved Takaful operators in line with Islamic financial principles.",
+    },
+    {
+      title: "No hidden charges",
+      text: "No hidden fees or interest-based clauses.",
+    },
   ]
 const allSection = [
     {

@@ -23,12 +23,12 @@ export default function Faq({
     {
       question: "What is non-interest banking?",
       answer:
-        "A non-interest digital bank offers financial services that comply with ethical and profit-and-loss sharing principles. We do not charge or pay interest (riba), and our services are structured around transparency, fairness, and social responsibility. Delivered entirely through secure digital platforms. Rather than lending money with fixed interest, the bank engages in real economic activities—such as trade, leasing, and profit-sharing investments, while distributing returns and risks fairly with customers.",
+        "A non-interest digital bank offers financial services that comply with ethical and profit-and-loss sharing principles. We do not charge or pay interest (riba), and our services are structured around transparency, fairness, and social responsibility, delivered entirely through secure digital platforms. Rather than lending money with fixed interest, the bank engages in real economic activities—such as trade, leasing, and profit-sharing investments, while distributing returns and risks fairly with customers.",
     },
     {
       question: "How is non-interest banking different from conventional banking?",
       answer:
-        "Unlike conventional banks, we do not deal in interest-based transactions. Our products are designed around partnerships, trade, and asset-backed financing models, ensuring fairness and shared risk between the bank and its customers.",
+        "At Summit banks, our products are designed around partnerships, trade, and asset-backed financing models, ensuring fairness and shared risk between the bank and its customers.",
     },
     {
       question: "Is Non-interest Bank the same as an Islamic bank?",
@@ -69,14 +69,15 @@ export default function Faq({
         "Our income is derived from ethical investment activities, service charges, trade-based financing, lease contracts, and profit-sharing partnerships, not from interest.",
     },
     {
-      question: "Does Summit Bank offer loans and financing?",
+      question: "Does Summit Bank offer financing?",
       answer: `
         <p><b>Yes</b>. We provide non-interest financing options such as:</p>
         <ul class="list-disc list-inside">
-          <li>Asset-backed financing (e.g., Murabaha-like structures)</li>
-          <li>Partnership-based funding (e.g., Mudarabah/Musharrakah-inspired models)</li>
-          <li>Lease-based financing (e.g., Ijarah structures)</li>
-          <li>Investment and wealth management solutions (ethically structured)</li>
+          <li>Trade-Based (e.g., Murabaha-like structures)</li>
+          <li>Partnership-Based (e.g., Mudarabah/Musharrakah-inspired models)</li>
+          <li>Lease-Based (e.g., Ijarah structures)</li>
+          <li>Fee-Based (e.g., Ijarah structures)</li>
+          <li>Ethically structured Investment and wealth management solutions</li>
           <li>Financial inclusion tools for underserved communities</li>
         </ul>
         <p>These are structured in a way that promotes shared responsibility and ethical returns.</p>
@@ -92,10 +93,10 @@ export default function Faq({
       answer: `
         <ul class="list-disc list-inside">
           <li> <b>Risk Sharing:</b> Financiers and entrepreneurs share profits and losses.</li>
-          <li> <b>Asset-Backed Transactions:</b> Financing must be linked to real goods or services.</li>
+          <li> <b>Trade-Based Transactions:</b> Financing must be linked to real goods or services.</li>
           <li> <b>Fairness & Justice:</b> Transactions must be equitable and non-exploitative.</li>
           <li> <b>Ethical Investment:</b> Prohibited sectors include alcohol, gambling, weapons and other unethical activities.</li>
-          <li> <b>Prohibition of Interest (Riba):</b> Fixed interest is disallowed; financing is return-based.</li>
+          <li> <b>Prohibition of Interest (Riba):</b> Interest is disallowed; financing is return-based.</li>
           <li> <b>Avoidance of Excessive uncertainty (Gharar):</b> Highly speculative deals are not permissible.</li>
         </ul>
       `,
@@ -103,7 +104,7 @@ export default function Faq({
     {
       question: "How do Non-Interest Banks operate?",
       answer:
-        "Banks operate by using depositors' funds in Shari'ah-compliant ventures and sharing profits (or losses) based on agreed terms. Unlike conventional banks, Non-interest Banks do not earn from interest but from trade, leasing, and partnership models.",
+        "Banks operate by using depositors' funds in Shari'ah-compliant ventures and sharing profits (or losses) based on agreed terms. Non-interest Banks do not earn from interest but from trade, leasing, and partnership models.",
     },
     {
       question: "What distinguishes Interest-Based from Profit-Based Systems?",
@@ -118,7 +119,7 @@ export default function Faq({
         <ul class="list-disc list-inside">
           <li>Deposits are treated as investments.</li>
           <li>Profits shared per agreed ratios; losses may apply.</li>
-          <li>Earnings come from real economic activities.</li>
+          <li>Earnings are generated from real economic activities.</li>
         </ul>
       `,
     },
@@ -126,7 +127,7 @@ export default function Faq({
       question: "What Islamic banking products are offered?",
       answer: `
         <ul class="list-disc list-inside">
-          <li> <b>Murabaha (Cost-Plus Sale):</b> Bank buys item and resells at agreed profit margin.</li>
+          <li> <b>Murabaha (Cost-Plus Sale):</b> Bank buys item and resells at agreed profit mark-up.</li>
           <li> <b>Mudarabah (Trust Financing):</b> Bank provides capital, while the customer manages the transaction.</li>
           <li> <b>Ijara (Leasing):</b> Bank leases asset to customer; eventual ownership is optional.</li>
           <li> <b>Sukuk (Islamic Bonds):</b> Asset-backed investments yielding shared returns.</li>

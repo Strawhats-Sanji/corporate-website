@@ -24,7 +24,7 @@ export default function DigitalAndAlternativeBanking() {
   const allSection = [
     {
       title: "Cutting-Edge FinTech Solutions",
-      text: "Discover next-generation financial tools that powers our digital banking platforms. Providing ethical crowdfunding and blockchain transactions based on transparency. Our FinTech services offer smart, scalable, stable and secure environment to support your needs.",
+      text: "Summit Bank delivers next-generation financial solutions through advanced digital banking platforms. We uphold transparency in our ethical crowdfunding initiatives and transactions. Our services are designed to provide a smart, scalable, stable, and secure environment that meets diverse financial needs.",
       image: "/pages-section/fintech-solution.png",
       reverse: true,
     },

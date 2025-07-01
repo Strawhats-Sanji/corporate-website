@@ -12,31 +12,31 @@ import React from "react";
 export default function page() {
   const heroDetails = {
     title: "Summit Cost-Plus - SCP (Murabaha)",
-    text: "These are structured based on the customer’s risk and return expectations.",
+    text: "These are structured to enable customers acquire assets through transparent, fixed-profit sales.",
   };
 
   const allFeatures = [
     {
-      title: "Competitive financing profit rate",
-      text: "Manage your money anytime, anywhere with our intuitive mobile app and online banking platform.",
-    },
-    {
-      title: "Flexible tenor and payment plan",
-      text: "Enjoy true financial freedom with zero minimum balance requirements and no hidden restrictions.",
-    },
-    {
-      title:
-        "Can be used for raw materials, goods and inventory finance, working capital funding, import and expert, letter of credit and guarantee services",
-      text: "Access your funds easily with our debit card and personalized cheque book.",
-    },
-    {
-      title: "Insurance cover from reputable Takaful Company",
-      text: "Access your funds easily with our debit card and personalized cheque book.",
-    },
-    {
-      title: "No hidden charges",
-      text: "Access your funds easily with our debit card and personalized cheque book.",
-    },
+          title: "Shariah-compliant purchase financing",
+          text: "Summit purchases the asset on your behalf and resells it to you at a pre-agreed profit margin.",
+        },
+        {
+          title: "Fixed and predictable payments",
+          text: "Clear, fixed monthly or quarterly payment plans. No surprise charges, your payment structure is known from day one.",
+        },
+        {
+          title: "Inventory, trade, capital, guarantees.",
+          text: "Applicable for goods such as equipment, inventory, vehicles, or other approved tangible assets.",
+        },
+        {
+          title: "Insurance cover from reputable Takaful Company",
+          text: "Access to Islamic insurance (Takaful) to protect the financed asset, ensuring added peace of mind.",
+        },
+        {
+          title: "No hidden charges",
+          text: "All fees, costs, and profit margins are disclosed in advance.",
+        },
+
   ];
   const allSection = [
     {

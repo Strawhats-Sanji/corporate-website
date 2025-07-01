@@ -70,9 +70,9 @@ export default function AllProfiles() {
       category: "Managing Director/CEO",
       content: (
         <DummyContent
-          text={`Dr. Sirajo Salisu is a thoroughbred banker with 16 years of experience in executive management positions in different banks. From 2009 to 2015, he served as Managing Director/CEO of Arab-Gambia Islamic Bank in The Gambia Republic, where he recorded remarkable achievements. In 2016, Dr. Salisu returned to Nigeria and joined Jaiz Bank Plc, where he served as Pioneer Regional Manager (South), Chief Risk Officer (CRO), Executive Director (Business Development), and was subsequently appointed Managing Director/CEO in August 2022.  
+          text={`Dr. Sirajo Salisu is a thoroughbred banker with 16 years of experience in executive management positions in different banks. From 2009 to 2015, he served as Managing Director/CEO of Arab-Gambia Islamic Bank in The Republic of Gambia, where he recorded remarkable achievements. In 2016, Dr. Salisu returned to Nigeria and joined Jaiz Bank Plc, where he served as Pioneer Regional Manager (South), Chief Risk Officer (CRO), Executive Director (Business Development), and was subsequently appointed Managing Director/CEO in August 2022.  
       Overall, he has 31 years of practical banking experience with an extensive understanding of the non-interest banking space.  
-      He holds a BSc in Economics, an MSc in (Monetary) Economics, and a PhD in (Agricultural) Economics. He also holds a second master's degree in Islamic Banking and Finance. In addition, Dr Salisu is a Certified Risk Manager (CRM), a Fellow of the Institute of Credit Administration (FICA), and an Honorary Senior Member of the Chartered Institute of Bankers of Nigeria (CIBN). He is also an Alumnus of Lagos Business School (LBS), Nigeria, and Madinah Institute for Leadership and Entrepreneurship (MILE) in the Kingdom of Saudi Arabia.`}
+      He holds a BSc in Economics, an MSc in (Monetary) Economics, and a PhD in (Agricultural) Economics. He also holds a second master's degree in Islamic Banking and Finance. In addition, Dr Salisu is a Certified Risk Manager (CRM), a Fellow of the Institute of Credit Administration (FICA), and an Honorary Senior Member of the Chartered Institute of Bankers of Nigeria (CIBN). He is also an Alumnus of the Lagos Business School (LBS), Nigeria, and Madinah Institute for Leadership and Entrepreneurship (MILE) in the Kingdom of Saudi Arabia.`}
         />
       ),
       src: "/directors/MD.jpg",
@@ -102,7 +102,7 @@ export default function AllProfiles() {
       category: "Non-Executive Director",
       content: (
         <DummyContent
-          text={`Aisha Bello is a seasoned banker with extensive operational banking experience across the sector and a keen eye for numbers. She served as Deputy General Manager at Zenith Bank and First Bank of Nigeria, and was the pioneer MD/CEO of I-Care Microfinance Bank Limited, Nigeria’s first non-interest MFB. Overall, she has over 30 years of banking experience.  
+          text={`Aisha Bello is a seasoned banker with extensive operational banking experience across the sector and a keen eye for numbers. She served as a Deputy General Manager at Zenith Bank and First Bank of Nigeria, and was the pioneer MD/CEO of I-Care Microfinance Bank Limited, Nigeria’s first non-interest MFB. Overall, she has over 30 years of banking experience.  
       She holds a B.Sc. in Accounting, an MBA, and a Professional Certificate in Islamic Banking and Finance from the International Institute of Islamic Banking and Finance, Bayero University, Kano.`}
         />
       ),
@@ -136,7 +136,7 @@ export default function AllProfiles() {
         <DummyContent
           text={`Basit Adekunle Olawoyin has close to two decades of experience in Energy, Project Finance, Banking, Public-Private Partnerships, Corporate Law, and Compliance.  
       He holds an LLM specializing in Credit Transactions, Taxation, and Energy from the University of Lagos and a Law degree from the University of Ilorin.  
-      He previously held senior legal roles at Eat ‘N’ Go Ltd, BOI Investments & Trust, Eximia Legal Consultants, and BGL Plc. Basit currently leads The Transaction Experts LP advising on power sector projects in Nigeria.`}
+      He previously held senior legal roles at Eat ‘N’ Go Ltd, BOI Investments & Trust, Eximia Legal Consultants, and BGL Plc. Basit currently leads The Transaction Experts LP, advising on power sector projects in Nigeria.`}
         />
       ),
       src: "/directors/Basit.jpg",

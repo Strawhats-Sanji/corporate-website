@@ -14,30 +14,28 @@ import { text } from "stream/consumers";
 export default function page() {
   const heroDetails = {
     title: "Summit Sukuk Investments - SSI",
-    text: "These are structured based on the customer’s risk and return expectations.",
+    text: "These are tailor-made investment solutions designed to align with your unique risk profile and financial goals for optimal returns.",
   };
 
   const allFeatures = [
     {
       title: "Shariah-compliant bonds with stable returns",
-      text: "manage your money anytime, anywhere with our intuitive mobile app and online banking platform.",
+      text: "Get a personalized investment strategy built around your financial objectives and comfort with risk.",
     },
     {
       title: "Low-risk investment options",
-      text: "Enjoy true financial freedom with zero minimum balance requirements and no hidden restrictions.",
+      text: "Grow your wealth confidently with secure, professionally managed instruments.",
     },
     {
       title: "Diversified portfolio opportunities",
-      text: "Access your funds easily with our debit card and personalized cheque book.",
+      text: "Minimize risk and maximize potential by investing across various asset classes.",
     },
     {
       title: "Regular profit distributions",
-      text: "Access your funds easily with our debit card and personalized cheque book.",
+      text: "eceive consistent earnings with transparent, scheduled payouts based on your investment plan.",
     
     },
 
-      
-    
  
   ]
 const allSection = [
