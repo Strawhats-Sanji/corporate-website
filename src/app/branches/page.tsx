@@ -28,7 +28,7 @@ export default function Branches() {
     {
       state: "LAGOS",
       locationType: "Liaison Office",
-      address: "234 Adeola Odeku Street, 3rd Floor, Victoria Island, Lagos.",
+      address: "No. 39 Adeola Odeku Street, 3rd Floor, Victoria Island, Lagos.",
       phone: "+234 (0) 700 700 0005",
       email: "digitalbankingsupport@summitbankng.com",
     },
