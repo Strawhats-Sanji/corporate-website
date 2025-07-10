@@ -28,7 +28,7 @@ const nextConfig = {
     ],
   },
   // Required for Netlify
-  output: 'standalone',
+  output: 'export',
 };
 
 module.exports = nextConfig;
