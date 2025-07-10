@@ -1,7 +1,13 @@
 [build]
   command = "npm run build"
-  publish = "out"  # <-- We'll use static export
-  environment = { NODE_VERSION = "18" }
+  publish = ".next"
+
+[functions]
+  directory = ".netlify/functions"
+
+[build.environment]
+  NODE_VERSION = "18"
+  NEXT_PRIVATE_TARGET = "server"
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
