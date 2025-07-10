@@ -27,8 +27,7 @@ const nextConfig = {
       },
     ],
   },
-  // Required for Netlify
-  output: 'export',
+  
 };
 
 module.exports = nextConfig;
