@@ -1,11 +1,9 @@
 [build]
-    command = "npm run build"
-    public = ".next"
-    function = "netlify/functions"
+  command = "npm run build"
+  publish = ".next"
 
-[build.environment]
-    NODE_VERSION = "18"
-    NEXT_PRIVATE_TARGET = "server"
+[functions]
+  directory = "netlify/functions"
 
-[[plugings]]
-    package = "@netlify/plugin-nextjs"
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
