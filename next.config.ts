@@ -27,9 +27,6 @@ const nextConfig = {
       },
     ],
   },
-  experimental: {
-    appDir: true,
-  },
   // Required for Netlify
   output: 'standalone',
 };
