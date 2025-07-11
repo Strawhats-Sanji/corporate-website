@@ -1,8 +1,34 @@
 [build]
   command = "npm run build"
-  publish = "out"
+  publish = ".next"
+  environment = { NODE_VERSION = "18" }  # Or your preferred version
 
+[functions]
+  node_bundler = "esbuild"
+
+  # Externalize heavy dependencies so they are NOT bundled in your function
+  external_node_modules = [
+    "sharp",
+    "moment",
+    "pdfkit",
+    "aws-sdk",
+    "@aws-sdk/*",
+    "puppeteer-core"
+    # Add other heavy dependencies you're using
+  ]
+
+  included_files = [
+    "./public/**/*", # Include public assets if needed by SSR
+    "./next.config.js"
+  ]
+
+[plugins]
+  [[plugins]]
+    package = "@netlify/plugin-nextjs"
+
+# Optional: Redirects for client-side routing (SPA fallback)
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
+  force = false
