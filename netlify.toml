@@ -1,24 +1,10 @@
 [build]
   command = "npm run build"
-  publish = ".next"
+  publish = "out"
   environment = { NODE_VERSION = "18" }
 
 [functions]
   node_bundler = "esbuild"
-
-  external_node_modules = [
-    "sharp",
-    "moment",
-    "pdfkit",
-    "aws-sdk",
-    "@aws-sdk/*",
-    "puppeteer-core"
-  ]
-
-  # ⚠️ Removed public/**/* to avoid bundling large media
-  included_files = [
-    "./next.config.js"
-  ]
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
