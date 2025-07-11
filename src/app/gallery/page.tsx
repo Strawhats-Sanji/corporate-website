@@ -1,8 +1,8 @@
-import { getGalleryFolders } from "@/lib/getGalleryFolders";
-import GalleryPageClient from "./GalleryPageClient"; // renamed your component
+// import { getGalleryImages } from "@/lib/getGalleryImages";
+// import GalleryPageClient from "./GalleryPageClient"; // renamed your component
 
-export default async function GalleryPage() {
-  const folders = await getGalleryFolders(); // runs server-side
+// export default async function GalleryPage() {
+//   const folders = await getGalleryImages(); // runs server-side
 
-  return <GalleryPageClient initialFolders={folders} />;
-}
+//   return <GalleryPageClient initialFolders={folders} />;
+// }
