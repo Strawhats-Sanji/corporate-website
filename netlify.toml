@@ -5,6 +5,8 @@
 
 [functions]
   node_bundler = "esbuild"
+
+  # Keep externalizing heavy packages
   external_node_modules = [
     "sharp",
     "moment",
@@ -13,15 +15,18 @@
     "@aws-sdk/*",
     "puppeteer-core"
   ]
+
+  # You probably want to remove public/**/* to prevent bundling large files
   included_files = [
-    "./public/**/*",
     "./next.config.js"
   ]
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
 
-# Optional: Redirects for client-side routing fallback
+  [plugins.inputs]
+  disableImageOptimization = true
+
 [[redirects]]
   from = "/*"
   to = "/index.html"
