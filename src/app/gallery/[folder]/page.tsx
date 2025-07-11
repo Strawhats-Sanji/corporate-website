@@ -1,16 +1,22 @@
 import { getGalleryImages } from "@/lib/getGalleryImages";
 
-export default async function GalleryFolderPage({ params }: { params: { folder: string } }) {
+interface PageProps {
+  params: {
+    folder: string;
+  };
+}
+
+export default async function GalleryFolderPage({ params }: PageProps) {
   const images = await getGalleryImages(params.folder);
 
   return (
-    <div>
-      <h1>{params.folder}</h1>
-      <ul>
+    <div className="p-10">
+      <h1 className="text-2xl font-bold mb-4">Gallery: {params.folder}</h1>
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
         {images.map((img, i) => (
-          <li key={i}><img src={img} alt="" /></li>
+          <img key={i} src={img} alt={`Gallery ${params.folder} ${i}`} />
         ))}
-      </ul>
+      </div>
     </div>
   );
 }
