@@ -6,7 +6,6 @@
 [functions]
   node_bundler = "esbuild"
 
-  # Keep externalizing heavy packages
   external_node_modules = [
     "sharp",
     "moment",
@@ -16,16 +15,13 @@
     "puppeteer-core"
   ]
 
-  # You probably want to remove public/**/* to prevent bundling large files
+  # ⚠️ Removed public/**/* to avoid bundling large media
   included_files = [
     "./next.config.js"
   ]
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
-
-  [plugins.inputs]
-  disableImageOptimization = true
 
 [[redirects]]
   from = "/*"
