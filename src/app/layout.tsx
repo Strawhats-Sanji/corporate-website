@@ -12,13 +12,27 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+// export const metadata: Metadata = {
+//   title: "Summit Bank",
+//   description: "SummitBank corporate website",
+//   icons: {
+//     icon: "/favicon-v1.ico",
+//     shortcut: "/favicon-v1-16x16.png",
+//     apple: "/favicon-v1-32x32.png",
+//   },
+// };
+
 export const metadata: Metadata = {
   title: "Summit Bank",
   description: "SummitBank corporate website",
   icons: {
-    icon: "/favicon-v1.ico",
-    shortcut: "/favicon-v1-16x16.png",
-    apple: "/favicon-v1-32x32.png",
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+    ],
+    apple: "/apple-touch-icon.png",  // specifically for Safari/iOS
+    shortcut: "/favicon.ico",
   },
 };
 
