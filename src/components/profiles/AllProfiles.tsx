@@ -242,7 +242,7 @@ export default function AllProfiles() {
       In 1990, Mr. Ahmed earned a B.Sc. (Hons) degree in Accounting from Ahmadu Bello University, Zaria, and later earned an MSc. in Banking and Finance from Bayero University, Kano. In addition, he holds a Professional Certificate in Islamic Banking and Finance from the International Institute of Islamic Banking and Finance, Bayero University, Kano. He has attended several local and international executive programs at renowned institutions, including LBS and Harvard. He is a Fellow of the Nigerian Institute of Management (FNIM), Fellow of the Chartered Institute of finance and Risk Management of Nigeria (FCILRM), Senior Honorary Member of the Chartered Institute of Bankers of Nigeria (HCIBN), Member, Association of National Accountants of Nigeria (CNA), and Member, Chartered Institute of Directors of Nigeria (M.CIoD).`}
         />
       ),
-      src: "/directors/Chairman.jpeg",
+      src: "/directors/Chairman1.jpeg",
       linkedIn: [
         { label: "Personal Profile", url: "https://www.linkedin.com/in/umar-shuaib-ahmed-10b62b34/"},
         {label: "Summit Bank", url: "https://www.linkedin.com/company/summitbankng"}
