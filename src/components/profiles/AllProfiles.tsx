@@ -274,7 +274,7 @@ export default function AllProfiles() {
       Mukhtar Adam has participated in several executive programs at world-leading institutions, including Harvard, Wharton, INSEAD, LSE, and MIT. He holds a PhD in Finance from Leeds Beckett University, an MSc in Finance from the University of London, an MBA in Finance from the University of Leicester, and a B.Ed. in Social Sciences from the University of Cape Coast in Ghana. He is a fellow/member of ICAN, ICAG, CITN, and other professional bodies.`}
         />
       ),
-      src: "/directors/ED1.jpg",
+      src: "/directors/ED1.jpeg",
        linkedIn: [
         { label: "Personal Profile", url: "https://www.linkedin.com/in/mukhtar-adam-phd-69a05821/"},
         {label: "Summit Bank", url: "https://www.linkedin.com/company/summitbankng"}
