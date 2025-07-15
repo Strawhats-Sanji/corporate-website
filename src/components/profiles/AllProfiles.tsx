@@ -322,7 +322,7 @@ export default function AllProfiles() {
       He previously held senior legal roles at Eat ‘N’ Go Ltd, BOI Investments & Trust, Eximia Legal Consultants, and BGL Plc. Basit currently leads The Transaction Experts LP, advising on power sector projects in Nigeria.`}
         />
       ),
-      src: "/directors/Basit.jpeg",
+      src: "/directors/Basit2.jpeg",
       linkedIn: [
         { label: "Personal Profile", url: "https://www.linkedin.com/in/basit-olawoyin-56813813/"},
         {label: "Summit Bank", url: "https://www.linkedin.com/company/summitbankng"}
