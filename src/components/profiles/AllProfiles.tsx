@@ -242,7 +242,7 @@ export default function AllProfiles() {
       In 1990, Mr. Ahmed earned a B.Sc. (Hons) degree in Accounting from Ahmadu Bello University, Zaria, and later earned an MSc. in Banking and Finance from Bayero University, Kano. In addition, he holds a Professional Certificate in Islamic Banking and Finance from the International Institute of Islamic Banking and Finance, Bayero University, Kano. He has attended several local and international executive programs at renowned institutions, including LBS and Harvard. He is a Fellow of the Nigerian Institute of Management (FNIM), Fellow of the Chartered Institute of finance and Risk Management of Nigeria (FCILRM), Senior Honorary Member of the Chartered Institute of Bankers of Nigeria (HCIBN), Member, Association of National Accountants of Nigeria (CNA), and Member, Chartered Institute of Directors of Nigeria (M.CIoD).`}
         />
       ),
-      src: "/directors/Chairman.jpg",
+      src: "/directors/Chairman1.jpg",
       linkedIn: [
         { label: "Personal Profile", url: "https://www.linkedin.com/in/umar-shuaib-ahmed-10b62b34/"},
         {label: "Summit Bank", url: "https://www.linkedin.com/company/summitbankng"}
@@ -258,7 +258,7 @@ export default function AllProfiles() {
       He holds a BSc in Economics, an MSc in (Monetary) Economics, and a PhD in (Agricultural) Economics. He also holds a second master's degree in Islamic Banking and Finance. In addition, Dr Salisu is a Certified Risk Manager (CRM), a Fellow of the Institute of Credit Administration (FICA), and an Honorary Senior Member of the Chartered Institute of Bankers of Nigeria (CIBN). He is also an Alumnus of the Lagos Business School (LBS), Nigeria, and Madinah Institute for Leadership and Entrepreneurship (MILE) in the Kingdom of Saudi Arabia.`}
         />
       ),
-      src: "/directors/MD.jpg",
+      src: "/directors/MD1.jpg",
       linkedIn: [
         { label: "Personal Profile", url: "https://www.linkedin.com/company/summitbankng"},
         {label: "Summit Bank", url: "https://www.linkedin.com/company/summitbankng"}
@@ -274,7 +274,7 @@ export default function AllProfiles() {
       Mukhtar Adam has participated in several executive programs at world-leading institutions, including Harvard, Wharton, INSEAD, LSE, and MIT. He holds a PhD in Finance from Leeds Beckett University, an MSc in Finance from the University of London, an MBA in Finance from the University of Leicester, and a B.Ed. in Social Sciences from the University of Cape Coast in Ghana. He is a fellow/member of ICAN, ICAG, CITN, and other professional bodies.`}
         />
       ),
-      src: "/directors/ED.jpg",
+      src: "/directors/ED1.jpg",
        linkedIn: [
         { label: "Personal Profile", url: "https://www.linkedin.com/in/mukhtar-adam-phd-69a05821/"},
         {label: "Summit Bank", url: "https://www.linkedin.com/company/summitbankng"}
@@ -289,7 +289,7 @@ export default function AllProfiles() {
       She holds a B.Sc. in Accounting, an MBA, and a Professional Certificate in Islamic Banking and Finance from the International Institute of Islamic Banking and Finance, Bayero University, Kano.`}
         />
       ),
-      src: "/directors/AISHA.jpg",
+      src: "/directors/AISHA1.jpg",
        linkedIn: [
         { label: "Personal Profile", url: "https://www.linkedin.com/company/summitbankng"},
         {label: "Summit Bank", url: "https://www.linkedin.com/company/summitbankng"}
@@ -306,7 +306,7 @@ export default function AllProfiles() {
       She holds an LLB from Bayero University, an LLM from Ahmadu Bello University, and a Diploma in Business Continuity Management from Coventry University.`}
         />
       ),
-      src: "/directors/ASMAU.jpg",
+      src: "/directors/ASMAU1.jpg",
        linkedIn: [
         { label: "Personal Profile", url: "https://www.linkedin.com/in/asma-u-nana-babah-mbci-miiba-33b40539/"},
         {label: "Summit Bank", url: "https://www.linkedin.com/company/summitbankng"}
@@ -322,7 +322,7 @@ export default function AllProfiles() {
       He previously held senior legal roles at Eat ‘N’ Go Ltd, BOI Investments & Trust, Eximia Legal Consultants, and BGL Plc. Basit currently leads The Transaction Experts LP, advising on power sector projects in Nigeria.`}
         />
       ),
-      src: "/directors/Basit.jpg",
+      src: "/directors/Basit1.jpg",
       linkedIn: [
         { label: "Personal Profile", url: "https://www.linkedin.com/in/basit-olawoyin-56813813/"},
         {label: "Summit Bank", url: "https://www.linkedin.com/company/summitbankng"}
@@ -338,7 +338,7 @@ export default function AllProfiles() {
       He is a Fellow of ICAN, CITN, and holds multiple certifications including CRISC, CRM, and CFAt.`}
         />
       ),
-      src: "/directors/SEIDU.jpg",
+      src: "/directors/SEIDU1.jpg",
       linkedIn: [
         { label: "Personal Profile", url: "https://www.linkedin.com/in/adebowale-seidu-ph-d-fca-fcti-crisc-crm-mciod-5930b253/"},
         {label: "Summit Bank", url: "https://www.linkedin.com/company/summitbankng"}
