@@ -488,6 +488,13 @@ export default function Header({ scrollState }: { scrollState: boolean }) {
               alt="nifi"
             />
           </a>
+          <div className="mr-5">
+          <Link href="https://ibank.summitbankng.com/IBS/">
+            <Button type="primary" buttonFn={handleSignIn}>
+              Sign In
+            </Button>
+          </Link>
+        </div>
           {/* <div className="hidden xl:flex items-center justify-center gap-1 z-20"> */}
           {/* <Framer animation={slideUp(0.45)}>
               <Select>
