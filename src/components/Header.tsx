@@ -488,10 +488,10 @@ export default function Header({ scrollState }: { scrollState: boolean }) {
               alt="nifi"
             />
           </a>
-          <div className="mr-5">
-          <Link href="https://ibank.summitbankng.com/IBS/">
+          <div className="ml-6">
+          <Link href="/sign-in">
             <Button type="primary" buttonFn>
-              Sign In
+              <span className="whitespace-nowrap">Internet Banking</span>
             </Button>
           </Link>
         </div>
