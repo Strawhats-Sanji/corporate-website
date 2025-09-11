@@ -19,7 +19,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Summit Bank",
   description: "SummitBank corporate website",
-  "facebook-domain-verification": "hia915ry35le4f7i499cfgaautxdaf"
+  "facebook-domain-verification": "hia915ry35le4f7i499cfgaautxdaf",
   icons: {
     icon: [
       { url: "/favicon.ico" },
