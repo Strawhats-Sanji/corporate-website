@@ -27,9 +27,9 @@ export const metadata: Metadata = {
     ],
     apple: "/apple-touch-icon.png",  // specifically for Safari/iOS
     shortcut: "/favicon.ico",
-    other: {
-    "facebook-domain-verification": "hia915ry35le4f7i499cfgaautxdaf",
   },
+  other: {
+    "facebook-domain-verification": "hia915ry35le4f7i499cfgaautxdaf",
   },
 };
 
