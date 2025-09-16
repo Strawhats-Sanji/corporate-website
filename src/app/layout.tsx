@@ -17,8 +17,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Summit Bank",
-  description: "SummitBank corporate website",
+  title: "Summit Bank | ...Beyond Numbers.",
+  description: "Summit Bank Corporate Website",
   icons: {
     icon: [
       { url: "/favicon.ico" },
